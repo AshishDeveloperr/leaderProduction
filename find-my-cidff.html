@@ -9,23 +9,25 @@
     <link rel="stylesheet" href="src/custom.css">
     <link rel="stylesheet" href="src/output.css">
     <link rel="stylesheet" href="src/input.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Leader Group</title>
 </head>
 <style>
-
-    .hr-line:before{
+    @media only screen and (min-width: 1024px) {
+        .hr-line:before{
         content: "";
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 2px;
-    width: 100%;
-    background: -webkit-gradient(linear,left top,right top,from(#ffebc7),to(#dcb4e4));
-    background: -webkit-linear-gradient(left,#ffebc7,#dcb4e4);
-    background: -o-linear-gradient(left,#ffebc7 0,#dcb4e4 100%);
-    background: linear-gradient(90deg,#ffebc7,#dcb4e4);
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 2px;
+        width: 100%;
+        background: -webkit-gradient(linear,left top,right top,from(#ffebc7),to(#dcb4e4));
+        background: -webkit-linear-gradient(left,#ffebc7,#dcb4e4);
+        background: -o-linear-gradient(left,#ffebc7 0,#dcb4e4 100%);
+        background: linear-gradient(90deg,#ffebc7,#dcb4e4);
+        }
     }
     </style>
 <body>
@@ -115,15 +117,15 @@
         </div>
     </div>
     <!-- mobile-header -->
-    <div class="hero relative pt-28 pb-0 md:pt-[15px] md:pb-[175px]" style="min-height: 100vh;overflow:hidden">
-        <div class="container mx-auto px-7 md:px-16 py-20">
+    <div class="hero relative pt-5 pb-0 md:pt-[15px] md:pb-[175px]" style="min-height: 100vh;overflow:hidden">
+        <div class="container mx-auto px-4 md:px-16 pb-20 pt-10 lg:py-20">
             <div class="flex justify-center">
                 <span class="flex font-light text-base text-gray-400">WELCOME <img src="src/img/menu/disk.svg" alt="" class="px-1 w-[18px]"><span class="font-semibold px-1 text-slate-900">FIND MY CIDFF</span></span>
             </div>
             <div class="flex justify-center pt-10 pb-5">
-                <h1 class="text-7xl font-semibold text-slate-900">Find <span class="text-orange-400">my CIDFF</span></h1>
+                <h1 class="text-2xl lg:text-7xl font-semibold text-slate-900">Find <span class="text-orange-400">my CIDFF</span></h1>
             </div>
-            <div class="px-64 flex justify-center flex-col">
+            <div class="px-2 lg:px-64 flex justify-center flex-col">
                 <h3 class="pt-4">
                    <b>98 CIDFF</b> - Information Centers on the Rights of Women and Families present throughout the country, in mainland France and Overseas.
                 </h3>
@@ -136,9 +138,9 @@
             </div>
         </div>
     </div>
-    <div class="container mx-auto hr-line relative pb-2 -mt-11">
+    <div class="container mx-auto hr-line relative px-5 pb-2 lg:-mt-11">
         <div class="py-14">
-            <h1 class="text-6xl font-normal text-slate-900 py-5">Closer to you</h1>
+            <h1 class="text-3xl lg:text-6xl font-medium lg:font-normal text-slate-900 py-3 lg:py-5">Closer to you</h1>
             <h2 class="text-base text-gray-600 py-5">
                 Throughout France, in one of the 2,300 offices of the CIDFF network, <b class="text-slate-900">professional teams</b> welcome you to inform you , 
                 support you and guide you confidentially and free of charge . Legal information, job search, business creation, parenting support, 
@@ -149,7 +151,7 @@
             </h2>
         </div>
     </div>
-    <footer class="relative footer mt-[170px]">
+    <footer class="relative footer mt-5 lg:mt-[170px]">
         <div class="container mx-auto px-7 md:px-10 pt-5 pb-24 md:pb-40">
             <div class="grid grid-cols-5 gap-4">
                 <div class="col-span-5 md:col-span-1 text-center md:text-start">
