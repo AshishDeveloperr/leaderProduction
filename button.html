@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/custom.css">
+    <link rel="stylesheet" href="src/output.css">
+    <link rel="stylesheet" href="src/input.css">
+    <title>Document</title>
+</head>
+<style>
+    .mobile-menu{
+        translate: none;
+    rotate: none;
+    scale: none;
+    transform: translate(0px, 0px);
+    opacity: 1;
+    visibility: inherit;
+    background-color: rgba(7, 32, 61, 0.9);
+}
+.right-menu{
+    translate: none;
+    rotate: none;
+    scale: none;
+    transform: translate(0px, 0px);
+    opacity: 1;
+    visibility: inherit;
+}
+.right-menu:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background: -webkit-gradient(linear,left top,right top,from(#ffebc7),to(#dcb4e4));
+    background: -webkit-linear-gradient(left,#ffebc7,#dcb4e4);
+    background: -o-linear-gradient(left,#ffebc7 0,#dcb4e4 100%);
+    background: linear-gradient(90deg,#ffebc7,#dcb4e4);
+    border-top-left-radius: 250px;
+    border-bottom-left-radius: 200px;
+    -webkit-transform: skewY(5deg) translateY(-4%) scale(1);
+    -ms-transform: skewY(5deg) translateY(-4%) scale(1);
+    transform: skewY(5deg) translateY(-4%) scale(1);
+}
+.menu-disk{
+    visibility: hidden;
+    transition:  0.1s ease-in;
+    /* margin-right: 15px */
+}
+.menu-li:hover .menu-disk{
+   visibility: visible;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    transition:  0.6s ease-in-out;
+    color: #ffa100;
+    -webkit-transform: translateX(5px);
+    -ms-transform: translateX(5px);
+    transform: translateX(5px);
+}
+</style>
+<body>
+    <div class="mobile-menu h-screen">
+        <div class="grid grid-cols-5">
+            <div class="col-span-3"></div>
+            <div class="col-span-2 right-menu h-screen">
+                <div class="pt-44 pb-10 pl-44">
+                    <ul class="text-slate-900 text-2xl">
+                        <li class="flex items-center menu-li hover:pl-3 pt-5 hover:text-yellow-500 hover:transition-all hover:duration-500 duration-500">
+                            <img src="src/img/menu/disk.svg" alt="" class="menu-disk">
+                            <span class="pl-2">Our missions</span>
+                        </li>
+                        <li class="flex items-center menu-li hover:pl-3 pt-5 hover:text-yellow-500 hover:transition-all hover:duration-500 duration-500">
+                            <img src="src/img/menu/disk.svg" alt="" class="menu-disk">
+                            <span class="pl-2">Our missions</span>
+                        </li>
+                        <li class="flex items-center menu-li hover:pl-3 pt-5 hover:text-yellow-500 hover:transition-all hover:duration-500 duration-500">
+                            <img src="src/img/menu/disk.svg" alt="" class="menu-disk">
+                            <span class="pl-2">Our missions</span>
+                        </li>
+                        <li class="flex items-center menu-li hover:pl-3 pt-5 hover:text-yellow-500 hover:transition-all hover:duration-500 duration-500">
+                            <img src="src/img/menu/disk.svg" alt="" class="menu-disk">
+                            <span class="pl-2">Our missions</span>
+                        </li>
+                        <li class="flex items-center menu-li hover:pl-3 pt-5 hover:text-yellow-500 hover:transition-all hover:duration-500 duration-500">
+                            <img src="src/img/menu/disk.svg" alt="" class="menu-disk">
+                            <span class="pl-2">Our missions</span>
+                        </li>
+                        <li class="flex items-center menu-li hover:pl-3 pt-5 hover:text-yellow-500 hover:transition-all hover:duration-500 duration-500">
+                            <img src="src/img/menu/disk.svg" alt="" class="menu-disk">
+                            <span class="pl-2">Our missions</span>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

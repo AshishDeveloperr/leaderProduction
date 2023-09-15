@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/custom.css">
+    <link rel="stylesheet" href="src/output.css">
+    <link rel="stylesheet" href="src/input.css">
+    <title>Leader Group</title>
+</head>
+<style>
+
+    .hr-line:before{
+        content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    width: 100%;
+    background: -webkit-gradient(linear,left top,right top,from(#ffebc7),to(#dcb4e4));
+    background: -webkit-linear-gradient(left,#ffebc7,#dcb4e4);
+    background: -o-linear-gradient(left,#ffebc7 0,#dcb4e4 100%);
+    background: linear-gradient(90deg,#ffebc7,#dcb4e4);
+    }
+    </style>
+<body>
+    <header id="header" class="header">
+        <div class="container mx-auto py-7 px-10">
+            <div class="grid grid-cols-3 lg:grid-cols-2">
+                <div class="col-span-2 lg:col-span-1 flex justify-start items-center z-10">
+                    <div>
+                        <img src="src/img/LG.webp" alt="" class="w-32 lg:w-44">
+                    </div>
+                </div>
+                <div class="col-span-1 lg:col-span-1 z-10 flex items-center justify-center lg:block">
+                    <div class="grid grid-cols-3 gap-5 bg-[#fdf3eb] py-3 px-4 rounded-full text-center">
+                        <div class="col-span-1 hidden lg:block">
+                            <span>
+                                Make a donation
+                            </span>
+                        </div>
+                        <div class="col-span-1 hidden lg:block">
+                            <span>
+                                Find my CIDFF
+                            </span>
+                        </div>
+                        <div class="col-span-1 flex items-center">
+                            <span>
+                                Menu
+                            </span>
+                            <div class="pl-2">
+                                <div id="hamburger" class="transition-opacity" onclick="toggleIcon()">
+                                    <svg viewBox="0 0 100 80" width="20" height="20" id="hamburgerIcon">
+                                        <rect width="100" height="15" rx="10"></rect>
+                                        <rect y="30" width="100" height="15" rx="10"></rect>
+                                        <rect y="60" width="100" height="15" rx="10"></rect>
+                                    </svg>
+                                    <svg viewBox="0 0 100 100" width="20" height="20" id="crossIcon" style="display: none;">
+                                        <path d="M10 10 L90 90 M10 90 L90 10" stroke="#000" stroke-width="15" stroke-linecap="round"/>
+                                    </svg>
+                                </div>
+                            </div>                           
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- mobile-header -->
+    <div class="mobile-menu h-screen hidden">
+        <div class="grid grid-cols-5">
+            <div class="col-span-1 lg:col-span-3"></div>
+            <div class="col-span-4 lg:col-span-2 right-menu h-screen">
+                <div class="pt-44 pb-10 pl-2 lg:pl-44">
+                    <ul class="text-slate-900 text-lg font-medium md:text-2xl -mt-10">
+                        <li class="flex items-center menu-li hover:pl-3 pt-5 hover:text-yellow-500 hover:transition-all hover:duration-500 duration-500">
+                            <img src="src/img/menu/disk.svg" alt="" class="menu-disk">
+                            <a href="our-projects.html">
+                                <span class="pl-2">Our Projects</span>
+                            </a>
+                        </li>
+                        <li class="flex items-center menu-li hover:pl-3 pt-5 hover:text-yellow-500 hover:transition-all hover:duration-500 duration-500">
+                            <img src="src/img/menu/disk.svg" alt="" class="menu-disk">
+                            <a href="who-we-are.html">
+                                <span class="pl-2">Who we are</span>
+                            </a>
+                        </li>
+                        <li class="flex items-center menu-li hover:pl-3 pt-5 hover:text-yellow-500 hover:transition-all hover:duration-500 duration-500">
+                            <img src="src/img/menu/disk.svg" alt="" class="menu-disk">
+                            <a href="news.html">
+                                <span class="pl-2">News</span>
+                            </a>
+                        </li>
+                        <li class="flex items-center menu-li hover:pl-3 pt-5 hover:text-yellow-500 hover:transition-all hover:duration-500 duration-500">
+                            <img src="src/img/menu/disk.svg" alt="" class="menu-disk">
+                            <a href="find-my-cidff.html">
+                                <span class="pl-2">Contact Us</span>
+                            </a>
+                        </li>
+                        <li class="flex items-center menu-li hover:pl-3 pt-5 hover:text-yellow-500 hover:transition-all hover:duration-500 duration-500">
+                            <img src="src/img/menu/disk.svg" alt="" class="menu-disk">
+                            <a href="page.html">
+                                <span class="pl-2">Demo page</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- mobile-header -->
+    <div class="hero relative pt-28 pb-0 md:pt-[15px] md:pb-[175px]" style="min-height: 100vh;overflow:hidden">
+        <div class="container mx-auto px-7 md:px-16 py-20">
+            <div class="flex justify-center">
+                <span class="flex font-light text-base text-gray-400">WELCOME <img src="src/img/menu/disk.svg" alt="" class="px-1 w-[18px]"><span class="font-semibold px-1 text-slate-900">FIND MY CIDFF</span></span>
+            </div>
+            <div class="flex justify-center pt-10 pb-5">
+                <h1 class="text-7xl font-semibold text-slate-900">Find <span class="text-orange-400">my CIDFF</span></h1>
+            </div>
+            <div class="px-64 flex justify-center flex-col">
+                <h3 class="pt-4">
+                   <b>98 CIDFF</b> - Information Centers on the Rights of Women and Families present throughout the country, in mainland France and Overseas.
+                </h3>
+                <h3 class="py-5">
+                   Find <b>your CIDFF</b> by selecting your department on the map below.
+                </h3>
+            </div>
+            <div class="map bg-gray-200 h-[30vh]">
+                <h1 class="text-center text-base pt-5">Map here</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container mx-auto hr-line relative pb-2 -mt-11">
+        <div class="py-14">
+            <h1 class="text-6xl font-normal text-slate-900 py-5">Closer to you</h1>
+            <h2 class="text-base text-gray-600 py-5">
+                Throughout France, in one of the 2,300 offices of the CIDFF network, <b class="text-slate-900">professional teams</b> welcome you to inform you , 
+                support you and guide you confidentially and free of charge . Legal information, job search, business creation, parenting support, 
+                fight against gender-based and sexual violence, equality education, health... The CIDFF are at your service.
+            </h2>
+            <h2 class="text-base text-gray-600 pb-5 pt-2">
+                To access the search engine, click on “tool” under the map, then on the magnifying glass at the top right of the map.
+            </h2>
+        </div>
+    </div>
+    <footer class="relative footer mt-[170px]">
+        <div class="container mx-auto px-7 md:px-10 pt-5 pb-24 md:pb-40">
+            <div class="grid grid-cols-5 gap-4">
+                <div class="col-span-5 md:col-span-1 text-center md:text-start">
+                    <div class="pt-5 flex justify-center md:justify-start">
+                        <img src="src/img/LG.webp" alt="" class="w-32 lg:w-44">
+                    </div>
+                    <ul class="text-xs text-gray-800 py-7 text-center md:text-start">
+                        <li>Mentions légales</li>
+                        <li>Confidentialité</li>
+                        <li>CGU</li>
+                        <li>CGV</li>
+                    </ul>
+                    <span class="text-xs text-pink-400">© 2022 FNCIDFF Réalisé par <span class="text-gray-800">Adveris</span></span>
+                </div>
+                <div class="col-span-5 md:col-span-1 flex flex-col justify-center items-center">
+                    <img src="https://fncidff.info/wp-content/uploads/2022/10/CIDFFclrReseauxsociaux.jpg" alt="" class="rounded-[36px] w-52 mt-2 md:-mt-32 z-10">
+                    <div class="grid grid-cols-3 gap-2 -mt-6 z-20">
+                    <div class="col-span-1">
+                            <div class="social-icon p-3">
+                                <img src="src/img/social-icon/insta.svg" alt="" class="w-[20px]">
+                            </div>
+                    </div>
+                    <div class="col-span-1">
+                            <div class="social-icon p-3">
+                                <img src="src/img/social-icon/insta.svg" alt="" class="w-[20px]">
+                            </div>
+                    </div>
+                    <div class="col-span-1">
+                            <div class="social-icon p-3">
+                                <img src="src/img/social-icon/linkedin.svg" alt="" class="w-[20px]">
+                            </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-span-5 md:col-span-1">
+                    <div class="text-center flex justify-center md:justify-start md:text-start md:flex-col mt-7">
+                        <h1 class="text-yellow-500 font-medium text-2xl">Nos</h1>
+                        <h1 class="text-yellow-500 font-medium text-2xl pl-1 md:pl-0 md:-mt-2">services</h1>
+                    </div>
+                    <ul class="text-xs text-gray-700 pl-6 pr-3 pt-2 text-center md:text-start">
+                        <li class="hover:text-slate-950 hover:font-bold pb-1">Nous contacter</li>
+                        <li class="hover:text-slate-950 hover:font-bold pb-1">Lutte contre les violences</li>
+                        <li class="hover:text-slate-950 hover:font-bold pb-1">Emploi, Formation et Création d’entreprise</li>
+                        <li class="hover:text-slate-950 hover:font-bold pb-1">Éducation et citoyenneté</li>
+                        <li class="hover:text-slate-950 hover:font-bold pb-1">Vie Familiale et Parentalité</li>
+                        <li class="hover:text-slate-950 hover:font-bold pb-1">Santé et Sexualité</li>
+                    </ul>
+                </div>
+                <div class="col-span-5 md:col-span-1">
+                    <div class="text-center flex justify-center md:justify-start md:text-start md:flex-col mt-7">
+                        <h1 class="text-yellow-500 font-medium text-2xl">Liens </h1>
+                        <h1 class="text-yellow-500 font-medium text-2xl pl-1 md:pl-0 md:-mt-2">utiles</h1>
+                    </div>
+                    <ul class="text-xs text-gray-700 pl-6 pr-3 pt-2 text-center md:text-start">
+                        <li class="hover:text-slate-950 hover:font-bold pb-1">Nous contacter</li>
+                        <li class="hover:text-slate-950 hover:font-bold pb-1">Faire un don</li>
+                        <li class="text-xs font-medium text-[#00cbc7] hover:font-bold pb-1">Espace CIDFF</li>
+                        <li class="text-xs font-medium text-[#00cbc7] hover:font-bold pb-1">Boutique</li>
+                    </ul>
+                </div>
+                <div class="col-span-5 md:col-span-1 flex justify-center mt-10">
+                    <div style="height: 70px;">
+                        <a href="" class="transition-all duration-300 ease-in-out fancy-button flex">
+                            <div class="link">
+                                <span class="text-white text-[10px] pt-2">Contactez mon CIDFF</span>
+                            </div>
+                            <div class="bubble">
+                                <svg class="svg-msg" width="93" height="80" viewBox="0 0 93 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="line" d="M68.5595 69.7406H68.2909L68.1426 69.9646L62.5966 78.3394V70.2406V69.7406H62.0966H29.7884C22.817 69.7406 16.8323 64.7795 15.5398 57.9289L12.135 39.8826C9.14781 24.0492 22.6185 9.97426 38.5677 12.2643L77.3114 17.8274C85.3104 18.9759 90.8269 26.4419 89.5756 34.4255L85.9611 57.486C84.8553 64.5411 78.7773 69.7406 71.636 69.7406H68.5595Z" stroke="#07203D"></path>
+                                    <path d="M30.1146 40.6891C30.4232 41.2767 31.1613 41.4011 31.7634 41.4696C32.2995 41.5316 32.8586 41.4776 33.3877 41.3739C34.3401 41.1866 35.2779 40.8967 36.2257 40.684C36.4456 40.6382 36.6415 40.5149 36.7776 40.3364C36.9138 40.158 36.981 39.9364 36.967 39.7124C36.9329 39.29 36.573 38.8281 36.1049 38.8436C35.0166 38.8852 33.9157 38.7798 32.8308 38.8577C32.3338 38.8829 31.842 38.9703 31.3669 39.1179C30.7454 39.3188 29.6765 39.8564 30.1142 40.6896L30.1146 40.6891Z" fill="black"></path>
+                                    <path d="M39.6796 39.6255C39.7499 40.3198 40.4943 40.6016 41.0648 40.7897C41.5868 40.9576 42.1323 41.0407 42.6806 41.0357C43.652 41.0355 44.6509 40.7433 45.5869 40.5149C46.0039 40.4131 46.3129 40.0507 46.2775 39.6105C46.2435 39.1937 45.9145 38.8183 45.4754 38.8022C45.0059 38.7876 44.5381 38.7402 44.0753 38.6603L43.9077 38.6296C44.0169 38.6515 44.0062 38.649 43.8757 38.622C43.7689 38.5989 43.6626 38.5761 43.5565 38.5519C43.2627 38.4843 42.9718 38.4356 42.6737 38.3975C42.4501 38.367 42.2249 38.3504 41.9993 38.3477C41.8851 38.3482 41.772 38.3402 41.6592 38.341C41.2992 38.3634 41.2234 38.3689 41.4319 38.3575L41.3184 38.364C40.978 38.3818 40.6347 38.3683 40.3158 38.505C39.8637 38.6992 39.6324 39.158 39.6799 39.6296L39.6796 39.6255Z" fill="black"></path>
+                                    <path d="M48.558 40.0856C48.8126 40.4968 49.1297 40.6862 49.596 40.7794C49.9149 40.8531 50.2399 40.898 50.5669 40.9134C51.2075 40.9258 51.847 40.8941 52.4863 40.8475C53.1256 40.801 53.5872 40.008 53.4462 39.4209C53.2835 38.7419 52.6948 38.3806 52.0185 38.4603C51.7522 38.4923 51.4848 38.5191 51.2167 38.5399C51.4244 38.5248 51.0457 38.5478 51.0027 38.5507C50.8682 38.5561 50.7331 38.5588 50.5987 38.5628C49.8833 38.5845 49.1058 38.5946 48.621 39.1885C48.4393 39.4091 48.4057 39.8423 48.558 40.0879L48.558 40.0856Z" fill="black"></path>
+                                    <path d="M49.3621 34.3376C49.1341 34.14 49.408 34.4512 49.4567 34.5111C49.5237 34.5866 49.5963 34.6569 49.6738 34.7215C49.872 34.9015 50.0829 35.0669 50.3049 35.2165C50.6568 35.4533 51.0065 35.6933 51.3605 35.9268C52.0707 36.3908 52.7835 36.8519 53.5011 37.3037C54.9414 38.211 56.4468 39.0057 57.9234 39.8499C57.9782 39.0732 58.0333 38.2969 58.0886 37.521C56.2492 38.6282 54.3643 39.8859 52.8873 41.4606C51.4102 43.0353 50.0151 44.7046 48.6078 46.3518C48.3093 46.7011 48.4512 47.2958 48.7686 47.5689C49.1116 47.8648 49.6396 47.8997 49.9961 47.5862C51.5442 46.2249 53.112 44.8847 54.7443 43.6226C55.5485 43.0029 56.3071 42.3083 57.0913 41.6574C57.8902 40.9938 58.6999 40.3499 59.5527 39.7536C60.2493 39.2674 60.1314 38.028 59.4267 37.6157C57.9407 36.7474 56.4848 35.8219 54.957 35.026C54.2002 34.6314 53.4428 34.2354 52.681 33.8505C52.2453 33.6301 51.8064 33.4168 51.367 33.2032C50.988 33.017 50.4628 32.8076 49.8857 32.8527L50.354 32.883C50.272 32.8663 50.1916 32.8425 50.1138 32.8119C49.9173 32.7475 49.7042 32.7564 49.5138 32.8368C49.3235 32.9173 49.1687 33.0638 49.0781 33.2495C48.8808 33.6647 49.0297 34.0489 49.3621 34.3376Z" fill="black"></path>
+                                    <path d="M68.9093 24.3452C67.7555 25.5996 66.9877 27.0664 66.2919 28.6104C66.0325 29.1858 66.9876 29.6621 67.2956 29.1054C68.0841 27.6827 68.9618 26.3207 69.6536 24.846C69.8448 24.4399 69.2137 24.0138 68.9072 24.3438L68.9093 24.3452Z" fill="#07203D"></path>
+                                    <path d="M74.7449 30.6019C74.231 30.9294 73.7009 31.2522 73.2338 31.6436C72.7807 32.0239 72.3437 32.4212 71.9229 32.8356C71.619 33.1342 71.5468 33.611 71.8385 33.9497C72.1058 34.2604 72.6436 34.3313 72.9536 34.0353C73.7747 33.2489 74.6308 32.4854 75.498 31.7502C75.6238 31.6405 75.7056 31.4889 75.7281 31.3236C75.7507 31.1582 75.7126 30.9902 75.6208 30.8507C75.4468 30.5936 75.0407 30.4155 74.7471 30.6033L74.7449 30.6019Z" fill="#07203D"></path>
+                                    <path d="M76.0068 40.9075C75.259 40.9322 74.5209 40.7907 73.7748 40.7577C73.0287 40.7246 72.2924 40.7082 71.551 40.6094C70.9811 40.5355 70.8167 41.4233 71.3584 41.5943C72.1114 41.8324 72.9057 42.0573 73.689 42.1502C74.4872 42.2462 75.2881 42.1056 76.0834 42.0448C76.7266 41.9948 76.6617 40.8862 76.0084 40.9109L76.0068 40.9075Z" fill="#07203D"></path>
+                                    <path d="M66.8055 47.9599C67.6222 48.6395 68.4573 49.3035 69.2303 50.0366C69.5144 50.3051 69.9322 50.3874 70.2494 50.114C70.5244 49.878 70.609 49.3677 70.327 49.0951C69.464 48.2598 68.57 47.4888 67.5364 46.8737C66.8011 46.4355 66.164 47.4261 66.8055 47.9599Z" fill="#07203D"></path>
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>
+</body>
+<script src="src/js/main.js"></script>
+</html>

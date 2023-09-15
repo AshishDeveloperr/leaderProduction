@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/custom.css">
+    <link rel="stylesheet" href="src/output.css">
+    <link rel="stylesheet" href="src/input.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Leader Group</title>
+    <style>
+        /* Initial styles for the bars */
+
+
+    </style>
+</head>
+    <div class="container mx-auto py-60 pb-5">
+            <div>
+                <button class="relative group">
+                  <div class="relative flex overflow-hidden items-center justify-center rounded-full w-[50px] h-[50px] transform transition-all bg-slate-700 ring-0 ring-gray-300 hover:ring-8 group-focus:ring-4 ring-opacity-30 duration-200 shadow-md">
+                    <div class="flex flex-col justify-between w-[20px] h-[20px] transform transition-all duration-300 origin-center overflow-hidden">
+                      <div class="bg-white h-[2px] w-7 transform transition-all duration-300 origin-left group-focus:rotate-[42deg]"></div>
+                      <div class="bg-white h-[2px] w-1/2 rounded transform transition-all duration-300 group-focus:-translate-x-10"></div>
+                      <div class="bg-white h-[2px] w-7 transform transition-all duration-300 origin-left group-focus:-rotate-[42deg]"></div>
+                    </div>
+                  </div>
+                </button>
+              </div>
+          </div>
+
+          <button id="hamburger" class="p-2 bg-gray-600 text-white rounded-full hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-400">
+            <div class="w-6 h-0.5 bg-white rounded-full transition-transform duration-300 transform group-hover:rotate-45 group-hover:-translate-y-px"></div>
+            <div class="w-6 h-0.5 bg-white rounded-full mt-1 transition-transform duration-300 transform group-hover:opacity-0"></div>
+            <div class="w-6 h-0.5 bg-white rounded-full mt-1 transition-transform duration-300 transform group-hover:-rotate-45 group-hover:translate-y-px"></div>
+        </button>
+    </div>
+      
+    <footer class="relative footer mt-[170px]">
+        <div class="container mx-auto px-7 md:px-10 pt-5 pb-24 md:pb-40">
+            <div class="grid grid-cols-5 gap-4">
+                <div class="col-span-5 md:col-span-1 text-center md:text-start">
+                    <div class="pt-5 flex justify-center md:justify-start">
+                        <svg width="141" height="44" viewBox="0 0 141 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.3147 44C7.0491 44 0 38.9965 0 28.329C0 18.5301 6.31519 12.7847 17.3147 12.7847C25.75 12.7847 30.5974 16.1234 32.7538 21.9774L27.4534 23.0722C25.7863 18.883 23.05 16.5577 16.6986 16.5577C10.3471 16.5577 5.89841 20.2583 5.89841 28.32C5.89841 36.3817 10.5827 40.1999 17.6771 40.1999C24.2007 40.1999 26.7648 36.7798 28.1511 33.1606L33.3246 33.8935C31.2045 39.8741 26.6017 43.9819 17.3147 43.9819V44Z" fill="#00AEAE"></path>
+                            <path d="M46.698 41.1409L46.1725 42.8509C39.8483 42.5523 36.6771 38.9875 36.6771 32.1563V18.2496C36.6771 16.802 36.4687 15.1553 36.061 13.3095C37.9637 13.1104 39.4858 13.1104 40.6365 13.3095C43.4815 13.8614 44.9131 15.4991 44.9131 18.2496V36.2731C44.9131 38.3722 44.9403 39.467 44.9856 39.5665C45.1849 40.6161 45.7557 41.1409 46.698 41.1409ZM44.152 3.73679C44.152 4.73206 43.7896 5.60971 43.0647 6.35163C42.3399 7.10261 41.461 7.47358 40.41 7.47358C39.359 7.47358 38.5435 7.10261 37.8006 6.35163C37.0486 5.60066 36.6771 4.73206 36.6771 3.73679C36.6771 2.68723 37.0486 1.80958 37.8006 1.08575C38.5435 0.361917 39.4224 0 40.41 0C41.452 0 42.3399 0.361917 43.0647 1.08575C43.7896 1.80958 44.152 2.69628 44.152 3.73679Z" fill="#F49600"></path>
+                            <path d="M91.6654 16.9829V25.8137H107.231L107.195 29.641L91.6745 29.6048V43.439L85.8485 43.4028V13.2823H112.74L112.776 17.0282L91.6654 16.992V16.9829Z" fill="#00AEAE"></path>
+                            <path d="M119.898 16.9829V25.8137H135.464L135.419 29.641L119.898 29.6048V43.439L114.072 43.4028V13.2823H140.964L141 17.0282L119.889 16.992L119.898 16.9829Z" fill="#00AEAE"></path>
+                            <path d="M63.6412 13.2823H51.4185V21.1902H57.2444V16.9829H63.5234C72.2034 16.9829 78.2377 20.1135 78.2377 28.3381C78.2377 35.9835 73.0641 39.8108 63.2878 39.8108H57.2535V36.264H51.4276V43.3847H63.4056C77.0145 43.3847 84.1452 37.205 84.1452 28.329C84.1452 18.4396 75.9997 13.2733 63.6502 13.2733L63.6412 13.2823Z" fill="#00AEAE"></path>
+                            <path d="M62.8801 26.3294C62.8801 27.3609 61.9197 28.2114 60.7418 28.2114H50.4944C49.3165 28.2114 48.3561 27.3609 48.3561 26.3294V25.7866C48.3561 24.7551 49.3165 23.9046 50.4944 23.9046H60.7418C61.9197 23.9046 62.8801 24.746 62.8801 25.7866V26.3294Z" fill="#F49600"></path>
+                            <path d="M62.8801 32.1925C62.8801 33.2239 61.9197 34.0744 60.7418 34.0744H50.4944C49.3165 34.0744 48.3561 33.233 48.3561 32.1925V31.6496C48.3561 30.6181 49.3165 29.7676 50.4944 29.7676H60.7418C61.9197 29.7676 62.8801 30.6181 62.8801 31.6496V32.1925Z" fill="#F49600"></path>
+                        </svg>
+                    </div>
+                    <ul class="text-xs text-gray-800 py-7 text-center md:text-start">
+                        <li>Mentions légales</li>
+                        <li>Confidentialité</li>
+                        <li>CGU</li>
+                        <li>CGV</li>
+                    </ul>
+                    <span class="text-xs text-pink-400">© 2022 FNCIDFF Réalisé par <span class="text-gray-800">Adveris</span></span>
+                </div>
+                <div class="col-span-5 md:col-span-1 flex flex-col justify-center items-center">
+                    <img src="https://fncidff.info/wp-content/uploads/2022/10/CIDFFclrReseauxsociaux.jpg" alt="" class="rounded-[36px] w-52 mt-2 md:-mt-32 z-10">
+                    <div class="grid grid-cols-3 gap-2 -mt-6 z-20">
+                    <div class="col-span-1">
+                            <div class="social-icon p-3">
+                                <img src="src/img/social-icon/insta.svg" alt="" class="w-[20px]">
+                            </div>
+                    </div>
+                    <div class="col-span-1">
+                            <div class="social-icon p-3">
+                                <img src="src/img/social-icon/insta.svg" alt="" class="w-[20px]">
+                            </div>
+                    </div>
+                    <div class="col-span-1">
+                            <div class="social-icon p-3">
+                                <img src="src/img/social-icon/linkedin.svg" alt="" class="w-[20px]">
+                            </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-span-5 md:col-span-1">
+                    <div class="text-center flex justify-center md:justify-start md:text-start md:flex-col mt-7">
+                        <h1 class="text-yellow-500 font-medium text-2xl">Nos</h1>
+                        <h1 class="text-yellow-500 font-medium text-2xl pl-1 md:pl-0 md:-mt-2">services</h1>
+                    </div>
+                    <ul class="text-xs text-gray-700 pl-6 pr-3 pt-2 text-center md:text-start">
+                        <li class="hover:text-slate-950 hover:font-bold pb-1">Nous contacter</li>
+                        <li class="hover:text-slate-950 hover:font-bold pb-1">Lutte contre les violences</li>
+                        <li class="hover:text-slate-950 hover:font-bold pb-1">Emploi, Formation et Création d’entreprise</li>
+                        <li class="hover:text-slate-950 hover:font-bold pb-1">Éducation et citoyenneté</li>
+                        <li class="hover:text-slate-950 hover:font-bold pb-1">Vie Familiale et Parentalité</li>
+                        <li class="hover:text-slate-950 hover:font-bold pb-1">Santé et Sexualité</li>
+                    </ul>
+                </div>
+                <div class="col-span-5 md:col-span-1">
+                    <div class="text-center flex justify-center md:justify-start md:text-start md:flex-col mt-7">
+                        <h1 class="text-yellow-500 font-medium text-2xl">Liens </h1>
+                        <h1 class="text-yellow-500 font-medium text-2xl pl-1 md:pl-0 md:-mt-2">utiles</h1>
+                    </div>
+                    <ul class="text-xs text-gray-700 pl-6 pr-3 pt-2 text-center md:text-start">
+                        <li class="hover:text-slate-950 hover:font-bold pb-1">Nous contacter</li>
+                        <li class="hover:text-slate-950 hover:font-bold pb-1">Faire un don</li>
+                        <li class="text-xs font-medium text-[#00cbc7] hover:font-bold pb-1">Espace CIDFF</li>
+                        <li class="text-xs font-medium text-[#00cbc7] hover:font-bold pb-1">Boutique</li>
+                    </ul>
+                </div>
+                <div class="col-span-5 md:col-span-1 flex justify-center mt-10">
+                    <div style="height: 70px;">
+                        <a href="" class="transition-all duration-300 ease-in-out fancy-button flex">
+                            <div class="link">
+                                <span class="text-white text-[10px] pt-2">Contactez mon CIDFF</span>
+                            </div>
+                            <div class="bubble">
+                                <svg class="svg-msg" width="93" height="80" viewBox="0 0 93 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="line" d="M68.5595 69.7406H68.2909L68.1426 69.9646L62.5966 78.3394V70.2406V69.7406H62.0966H29.7884C22.817 69.7406 16.8323 64.7795 15.5398 57.9289L12.135 39.8826C9.14781 24.0492 22.6185 9.97426 38.5677 12.2643L77.3114 17.8274C85.3104 18.9759 90.8269 26.4419 89.5756 34.4255L85.9611 57.486C84.8553 64.5411 78.7773 69.7406 71.636 69.7406H68.5595Z" stroke="#07203D"></path>
+                                    <path d="M30.1146 40.6891C30.4232 41.2767 31.1613 41.4011 31.7634 41.4696C32.2995 41.5316 32.8586 41.4776 33.3877 41.3739C34.3401 41.1866 35.2779 40.8967 36.2257 40.684C36.4456 40.6382 36.6415 40.5149 36.7776 40.3364C36.9138 40.158 36.981 39.9364 36.967 39.7124C36.9329 39.29 36.573 38.8281 36.1049 38.8436C35.0166 38.8852 33.9157 38.7798 32.8308 38.8577C32.3338 38.8829 31.842 38.9703 31.3669 39.1179C30.7454 39.3188 29.6765 39.8564 30.1142 40.6896L30.1146 40.6891Z" fill="black"></path>
+                                    <path d="M39.6796 39.6255C39.7499 40.3198 40.4943 40.6016 41.0648 40.7897C41.5868 40.9576 42.1323 41.0407 42.6806 41.0357C43.652 41.0355 44.6509 40.7433 45.5869 40.5149C46.0039 40.4131 46.3129 40.0507 46.2775 39.6105C46.2435 39.1937 45.9145 38.8183 45.4754 38.8022C45.0059 38.7876 44.5381 38.7402 44.0753 38.6603L43.9077 38.6296C44.0169 38.6515 44.0062 38.649 43.8757 38.622C43.7689 38.5989 43.6626 38.5761 43.5565 38.5519C43.2627 38.4843 42.9718 38.4356 42.6737 38.3975C42.4501 38.367 42.2249 38.3504 41.9993 38.3477C41.8851 38.3482 41.772 38.3402 41.6592 38.341C41.2992 38.3634 41.2234 38.3689 41.4319 38.3575L41.3184 38.364C40.978 38.3818 40.6347 38.3683 40.3158 38.505C39.8637 38.6992 39.6324 39.158 39.6799 39.6296L39.6796 39.6255Z" fill="black"></path>
+                                    <path d="M48.558 40.0856C48.8126 40.4968 49.1297 40.6862 49.596 40.7794C49.9149 40.8531 50.2399 40.898 50.5669 40.9134C51.2075 40.9258 51.847 40.8941 52.4863 40.8475C53.1256 40.801 53.5872 40.008 53.4462 39.4209C53.2835 38.7419 52.6948 38.3806 52.0185 38.4603C51.7522 38.4923 51.4848 38.5191 51.2167 38.5399C51.4244 38.5248 51.0457 38.5478 51.0027 38.5507C50.8682 38.5561 50.7331 38.5588 50.5987 38.5628C49.8833 38.5845 49.1058 38.5946 48.621 39.1885C48.4393 39.4091 48.4057 39.8423 48.558 40.0879L48.558 40.0856Z" fill="black"></path>
+                                    <path d="M49.3621 34.3376C49.1341 34.14 49.408 34.4512 49.4567 34.5111C49.5237 34.5866 49.5963 34.6569 49.6738 34.7215C49.872 34.9015 50.0829 35.0669 50.3049 35.2165C50.6568 35.4533 51.0065 35.6933 51.3605 35.9268C52.0707 36.3908 52.7835 36.8519 53.5011 37.3037C54.9414 38.211 56.4468 39.0057 57.9234 39.8499C57.9782 39.0732 58.0333 38.2969 58.0886 37.521C56.2492 38.6282 54.3643 39.8859 52.8873 41.4606C51.4102 43.0353 50.0151 44.7046 48.6078 46.3518C48.3093 46.7011 48.4512 47.2958 48.7686 47.5689C49.1116 47.8648 49.6396 47.8997 49.9961 47.5862C51.5442 46.2249 53.112 44.8847 54.7443 43.6226C55.5485 43.0029 56.3071 42.3083 57.0913 41.6574C57.8902 40.9938 58.6999 40.3499 59.5527 39.7536C60.2493 39.2674 60.1314 38.028 59.4267 37.6157C57.9407 36.7474 56.4848 35.8219 54.957 35.026C54.2002 34.6314 53.4428 34.2354 52.681 33.8505C52.2453 33.6301 51.8064 33.4168 51.367 33.2032C50.988 33.017 50.4628 32.8076 49.8857 32.8527L50.354 32.883C50.272 32.8663 50.1916 32.8425 50.1138 32.8119C49.9173 32.7475 49.7042 32.7564 49.5138 32.8368C49.3235 32.9173 49.1687 33.0638 49.0781 33.2495C48.8808 33.6647 49.0297 34.0489 49.3621 34.3376Z" fill="black"></path>
+                                    <path d="M68.9093 24.3452C67.7555 25.5996 66.9877 27.0664 66.2919 28.6104C66.0325 29.1858 66.9876 29.6621 67.2956 29.1054C68.0841 27.6827 68.9618 26.3207 69.6536 24.846C69.8448 24.4399 69.2137 24.0138 68.9072 24.3438L68.9093 24.3452Z" fill="#07203D"></path>
+                                    <path d="M74.7449 30.6019C74.231 30.9294 73.7009 31.2522 73.2338 31.6436C72.7807 32.0239 72.3437 32.4212 71.9229 32.8356C71.619 33.1342 71.5468 33.611 71.8385 33.9497C72.1058 34.2604 72.6436 34.3313 72.9536 34.0353C73.7747 33.2489 74.6308 32.4854 75.498 31.7502C75.6238 31.6405 75.7056 31.4889 75.7281 31.3236C75.7507 31.1582 75.7126 30.9902 75.6208 30.8507C75.4468 30.5936 75.0407 30.4155 74.7471 30.6033L74.7449 30.6019Z" fill="#07203D"></path>
+                                    <path d="M76.0068 40.9075C75.259 40.9322 74.5209 40.7907 73.7748 40.7577C73.0287 40.7246 72.2924 40.7082 71.551 40.6094C70.9811 40.5355 70.8167 41.4233 71.3584 41.5943C72.1114 41.8324 72.9057 42.0573 73.689 42.1502C74.4872 42.2462 75.2881 42.1056 76.0834 42.0448C76.7266 41.9948 76.6617 40.8862 76.0084 40.9109L76.0068 40.9075Z" fill="#07203D"></path>
+                                    <path d="M66.8055 47.9599C67.6222 48.6395 68.4573 49.3035 69.2303 50.0366C69.5144 50.3051 69.9322 50.3874 70.2494 50.114C70.5244 49.878 70.609 49.3677 70.327 49.0951C69.464 48.2598 68.57 47.4888 67.5364 46.8737C66.8011 46.4355 66.164 47.4261 66.8055 47.9599Z" fill="#07203D"></path>
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>
+</body>
+<script src="src/js/main.js"></script>
+<script>
+    const hamburgerButton = document.getElementById('hamburger');
+
+    hamburgerButton.addEventListener('click', () => {
+        // Toggle the class to trigger the animation
+        hamburgerButton.classList.toggle('group-hover');
+    });
+</script>
+</html>
