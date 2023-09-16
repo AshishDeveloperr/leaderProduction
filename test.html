@@ -17,27 +17,53 @@
 
     </style>
 </head>
-    <div class="container mx-auto py-60 pb-5">
-            <div>
-                <button class="relative group">
-                  <div class="relative flex overflow-hidden items-center justify-center rounded-full w-[50px] h-[50px] transform transition-all bg-slate-700 ring-0 ring-gray-300 hover:ring-8 group-focus:ring-4 ring-opacity-30 duration-200 shadow-md">
-                    <div class="flex flex-col justify-between w-[20px] h-[20px] transform transition-all duration-300 origin-center overflow-hidden">
-                      <div class="bg-white h-[2px] w-7 transform transition-all duration-300 origin-left group-focus:rotate-[42deg]"></div>
-                      <div class="bg-white h-[2px] w-1/2 rounded transform transition-all duration-300 group-focus:-translate-x-10"></div>
-                      <div class="bg-white h-[2px] w-7 transform transition-all duration-300 origin-left group-focus:-rotate-[42deg]"></div>
-                    </div>
-                  </div>
-                </button>
-              </div>
-          </div>
-
-          <button id="hamburger" class="p-2 bg-gray-600 text-white rounded-full hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-400">
-            <div class="w-6 h-0.5 bg-white rounded-full transition-transform duration-300 transform group-hover:rotate-45 group-hover:-translate-y-px"></div>
-            <div class="w-6 h-0.5 bg-white rounded-full mt-1 transition-transform duration-300 transform group-hover:opacity-0"></div>
-            <div class="w-6 h-0.5 bg-white rounded-full mt-1 transition-transform duration-300 transform group-hover:-rotate-45 group-hover:translate-y-px"></div>
-        </button>
+<div class="pt-[90rem] pb-[200px]">
+    <div id="counter">
+      <!-- You can add your counters here with data attributes -->
+      <div class="count" data-count="100">0</div>
+      <div class="count" data-count="250">0</div>
+      <div class="count" data-count="500">0</div>
     </div>
-      
+  </div>
+
+  <script>
+    const windowScroll = () => {
+      const sectionCounter = document.getElementById('counter');
+      const counters = document.querySelectorAll('.count');
+      let counted = false;
+
+      const animateCounters = () => {
+        const sectionTop = sectionCounter.getBoundingClientRect().top;
+        const sectionBottom = sectionTop + sectionCounter.offsetHeight;
+
+        if (!counted && sectionTop <= window.innerHeight && sectionBottom >= 0) {
+          counters.forEach((counterElement) => {
+            const countTo = parseInt(counterElement.getAttribute('data-count'));
+            let currentCount = 0;
+            const increment = Math.ceil(countTo / 200); // Adjust the speed by changing the divisor
+
+            const updateCount = () => {
+              currentCount += increment;
+              if (currentCount <= countTo) {
+                counterElement.textContent = currentCount;
+                requestAnimationFrame(updateCount);
+              } else {
+                counterElement.textContent = countTo;
+              }
+            };
+
+            updateCount();
+          });
+
+          counted = true;
+        }
+      };
+
+      window.addEventListener('scroll', animateCounters);
+    };
+
+    window.addEventListener('load', windowScroll);
+  </script>
     <footer class="relative footer mt-[170px]">
         <div class="container mx-auto px-7 md:px-10 pt-5 pb-24 md:pb-40">
             <div class="grid grid-cols-5 gap-4">
@@ -133,13 +159,5 @@
         </div>
    </footer>
 </body>
-<script src="src/js/main.js"></script>
-<script>
-    const hamburgerButton = document.getElementById('hamburger');
-
-    hamburgerButton.addEventListener('click', () => {
-        // Toggle the class to trigger the animation
-        hamburgerButton.classList.toggle('group-hover');
-    });
-</script>
+<scrip src="src/js/main.js"></script>
 </html>
