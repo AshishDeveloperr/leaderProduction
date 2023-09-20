@@ -33,33 +33,38 @@
 </style>
 <body>
     <header id="header" class="header">
-        <div class="container mx-auto py-5 px-10">
+        <div class="container mx-auto py-7 px-10">
             <div class="grid grid-cols-3 lg:grid-cols-2">
                 <div class="col-span-2 lg:col-span-1 flex justify-start items-center z-10">
                     <div>
-                        <img src="src/img/LG.webp" alt="" class="w-32 lg:w-36">
+                        <img src="src/img/LG.webp" alt="" class="w-32 lg:w-44">
                     </div>
                 </div>
                 <div class="col-span-1 lg:col-span-1 z-10 flex items-center justify-center lg:block">
-                    <div class="grid grid-cols-3 gap-5 bg-[#fdf3eb] py-3 px-4 rounded-full text-center">
+                    <div class="grid grid-cols-4 gap-5 bg-[#fdf3eb] py-3 px-4 rounded-full text-center">
                         <div class="col-span-1 hidden lg:block">
-                            <span>
-                                Make a donation
+                            <span class="cursor-pointer">
+                                <a href="index.html">
+                                    Home
+                                </a>
                             </span>
                         </div>
-                        <div class="col-span-1 hidden lg:block">
-                            <a href="find-my-cidff.html">
-                                <span>
-                                    Find my CIDFF
-                                </span>
-                            </a>
+                        <div class="col-span-1 hidden lg:block text-start">
+                            <span class="cursor-pointer">
+                                <a href="who-we-are.html">Who We Are</a>
+                            </span>
+                        </div>
+                        <div class="col-span-1 hidden lg:block text-start">
+                            <span class="cursor-pointer">
+                                <a href="contact.html">Contact</a>
+                            </span>
                         </div>
                         <div class="col-span-1 flex items-center">
-                            <span>
+                            <span class="cursor-pointer" onclick="toggleIcon()">
                                 Menu
                             </span>
                             <div class="pl-2">
-                                <div id="hamburger" class="transition-opacity" onclick="toggleIcon()">
+                                <div id="hamburger" class="transition-opacity cursor-pointer" onclick="toggleIcon()">
                                     <svg viewBox="0 0 100 80" width="20" height="20" id="hamburgerIcon">
                                         <rect width="100" height="15" rx="10"></rect>
                                         <rect y="30" width="100" height="15" rx="10"></rect>
@@ -104,7 +109,19 @@
                         </li>
                         <li class="flex items-center menu-li hover:pl-3 pt-5 hover:text-yellow-500 hover:transition-all hover:duration-500 duration-500">
                             <img src="src/img/menu/disk.svg" alt="" class="menu-disk">
-                            <a href="find-my-cidff.html">
+                            <a href="carrer.html">
+                                <span class="pl-2">Carrer</span>
+                            </a>
+                        </li>
+                        <li class="flex items-center menu-li hover:pl-3 pt-5 hover:text-yellow-500 hover:transition-all hover:duration-500 duration-500">
+                            <img src="src/img/menu/disk.svg" alt="" class="menu-disk">
+                            <a href="partners.html">
+                                <span class="pl-2">Partners</span>
+                            </a>
+                        </li>
+                        <li class="flex items-center menu-li hover:pl-3 pt-5 hover:text-yellow-500 hover:transition-all hover:duration-500 duration-500">
+                            <img src="src/img/menu/disk.svg" alt="" class="menu-disk">
+                            <a href="contact.html">
                                 <span class="pl-2">Contact Us</span>
                             </a>
                         </li>
@@ -128,12 +145,12 @@
                 </div>
                 <div class="col-span-5 md:col-span-2">
                     <div class="text-5xl md:text-8xl font-normal text-center md:text-start py-10">
-                        <h1 class="text-slate-900" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine">Meiux </br> informees</h1>
-                        <h1 class="text-[#ffa100] font-semibold" data-aos="fade-left" data-aos-offset="500">plus fortes</h1>
+                        <h1 class="text-slate-900" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine">Leader</h1>
+                        <h1 class="text-[#ffa100] font-semibold" data-aos="fade-left" data-aos-offset="500">Group</h1>
                     </div>
                     <div class="py-6 text-start">
                         <span class="text-slate-900 font-normal text-base leading-6">
-                            Vous souhaitez être informé·e sur vos droits, accompagné·e dans une démarche de retour vers l'emploi, vous êtes victime de violences sexistes ou sexuelles, vous rencontrez des difficultés dans l'exercice de la parentalité... Contactez votre CIDFF !
+                            WE ARE PROUD OF OUR PAST AND OUR PRESENT AND WE FACE THE FUTURE WITH UNFLAGGING DETERMINATION
                         </span>
                     </div>
                 </div>
@@ -258,15 +275,14 @@
    <div class="service relative pb-64" style="overflow-x: clip;">
        <div class="container mx-auto px-7 md:px-32 py-2">
                <div class="py-16" data-aos="zoom-in-right" data-aos-duration="500">
-                   <h1 class="text-5xl font-bold text-slate-900">À votre service</h1>
+                   <h1 class="text-5xl font-bold text-slate-900">Services</h1>
                </div>
                <div class="grid grid-cols-3 gap-8 relative">
                    <div class="col-span-3 md:col-span-1 relative service-card-parent" data-aos="zoom-in" data-aos-duration="800">
                        <div class="relative px-8 py-20 service-card transition-all duration-500 ease-in-out rounded-[20px]">
                            <div class="service-card-img transition-all duration-500 ease-in-out"></div>
-                           <div class="text-2xl text-slate-900 font-normal service-head-txt">Accès au droit</div>
-                           <div class="text-base font-normal text-gray-700 service-desc-txt">Vous souhaitez être informé·e sur vos droits pour savoir comment agir ?
-                               Quelle que soit la question que vous vous posez, contactez votre CIDFF !
+                           <div class="text-2xl text-slate-900 font-normal service-head-txt">Wholesale</div>
+                           <div class="text-base font-normal text-gray-700 service-desc-txt">Leader Sport understands that every individual is capable of living a healthy lifestyle. Through distribution of sports and fitness equipments, Leader Sport promote the gain of cardiovascular strength and agility. Along with this, they also carry the latest trends in apparel, active sport footwear, bags and accessories to match the consumers desire of feeling and looking good.
                            </div>
                        </div>
                        <svg class="article-line-svg service-card-svg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 93 80">
@@ -278,11 +294,10 @@
                        </svg>
                    </div>
                    <div class="col-span-3 md:col-span-1 relative service-card-parent top-10 md:top-24" data-aos="zoom-in" data-aos-duration="800">
-                       <div class="relative px-8 py-20 service-card transition-all duration-500 ease-in-out rounded-[20px]">
+                       <div class="relative px-8 py-32 service-card transition-all duration-500 ease-in-out rounded-[20px]">
                            <div class="service-card-img transition-all duration-500 ease-in-out"></div>
-                           <div class="text-2xl text-slate-900 font-normal service-head-txt">Accès au droit</div>
-                           <div class="text-base font-normal text-gray-700 service-desc-txt">Vous souhaitez être informé·e sur vos droits pour savoir comment agir ?
-                               Quelle que soit la question que vous vous posez, contactez votre CIDFF !
+                           <div class="text-2xl text-slate-900 font-normal service-head-txt">Retail</div>
+                           <div class="text-base font-normal text-gray-700 service-desc-txt">Healthy Sports is a novel idea originated after long span of research conducted in the health, fitness, and sports industry with particular reference to GCC market where obesity is the major challenge faced and not addressed effectively by any retailer.
                            </div>
                        </div>
                        <svg class="article-line-svg service-card-svg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 93 80">
@@ -294,11 +309,12 @@
                        </svg>
                    </div>
                    <div class="col-span-3 md:col-span-1 relative service-card-parent top-20 md:top-48" data-aos="zoom-in" data-aos-duration="800">
-                       <div class="relative px-8 py-20 service-card transition-all duration-500 ease-in-out rounded-[20px]">
+                       <div class="relative px-8 py-[10.2rem] service-card transition-all duration-500 ease-in-out rounded-[20px]">
                            <div class="service-card-img transition-all duration-500 ease-in-out"></div>
-                           <div class="text-2xl text-slate-900 font-normal service-head-txt">Accès au droit</div>
-                           <div class="text-base font-normal text-gray-700 service-desc-txt">Vous souhaitez être informé·e sur vos droits pour savoir comment agir ?
-                               Quelle que soit la question que vous vous posez, contactez votre CIDFF !
+                           <div class="text-2xl text-slate-900 font-normal service-head-txt">Trading</div>
+                           <div class="text-base font-normal text-gray-700 service-desc-txt">MONDO GENERAL TRADING LLC <br>
+                            Import, Export, and General Trading <br>
+                            TRADING in Coal
                            </div>
                        </div>
                        <svg class="article-line-svg service-card-svg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 93 80">
@@ -310,11 +326,16 @@
                        </svg>
                    </div>
                    <div class="col-span-3 md:col-span-1 relative service-card-parent top-[8rem] md:top-10" data-aos="zoom-in" data-aos-duration="800">
-                       <div class="relative px-8 py-20 service-card transition-all duration-500 ease-in-out rounded-[20px]">
+                       <div class="relative px-8 py-32 service-card transition-all duration-500 ease-in-out rounded-[20px]">
                            <div class="service-card-img transition-all duration-500 ease-in-out"></div>
-                           <div class="text-2xl text-slate-900 font-normal service-head-txt">Accès au droit</div>
-                           <div class="text-base font-normal text-gray-700 service-desc-txt">Vous souhaitez être informé·e sur vos droits pour savoir comment agir ?
-                               Quelle que soit la question que vous vous posez, contactez votre CIDFF !
+                           <div class="text-2xl text-slate-900 font-normal service-head-txt">Real Estate</div>
+                           <div class="text-base font-normal text-gray-700 service-desc-txt">One of the most successful residential, leisure and commercial developers in UAE. <br>
+                            <ul class="list-disc px-5 py-2">
+                                <li>PROPERTY DEVELOPMENT</li>
+                                <li>LEASING OF PROPERTIES</li>
+                                <li>TRADING IN LAND</li>
+                                <li>INVESTMENT IN PROPERTIES</li>
+                            </ul>
                            </div>
                        </div>
                        <svg class="article-line-svg service-card-svg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 93 80">
@@ -328,9 +349,8 @@
                    <div class="col-span-3 md:col-span-1 relative service-card-parent top-44 md:top-36" data-aos="zoom-in" data-aos-duration="800">
                        <div class="relative px-8 py-20 service-card transition-all duration-500 ease-in-out rounded-[20px]">
                            <div class="service-card-img transition-all duration-500 ease-in-out"></div>
-                           <div class="text-2xl text-slate-900 font-normal service-head-txt">Accès au droit</div>
-                           <div class="text-base font-normal text-gray-700 service-desc-txt">Vous souhaitez être informé·e sur vos droits pour savoir comment agir ?
-                               Quelle que soit la question que vous vous posez, contactez votre CIDFF !
+                           <div class="text-2xl text-slate-900 font-normal service-head-txt">Investment</div>
+                           <div class="text-base font-normal text-gray-700 service-desc-txt">Leader Advance Investment is a specially committed to serving and exceeding the unique needs of our valued clients with the utmost respect and professionalism. Our experience in all aspects of the industry allows us to offer knowledgeable advice on a wide range of sectors. The company has made numerous investment transactions on wholesale, retail, trading, hospitality, as well as property management.
                            </div>
                        </div>
                        <svg class="article-line-svg service-card-svg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 93 80">
@@ -342,11 +362,10 @@
                        </svg>
                    </div>
                    <div class="col-span-3 md:col-span-1 relative service-card-parent top-52 md:top-60" data-aos="zoom-in" data-aos-duration="800">
-                       <div class="relative px-8 py-20 service-card transition-all duration-500 ease-in-out rounded-[20px]">
+                       <div class="relative px-8 py-40 service-card transition-all duration-500 ease-in-out rounded-[20px]">
                            <div class="service-card-img transition-all duration-500 ease-in-out"></div>
-                           <div class="text-2xl text-slate-900 font-normal service-head-txt">Accès au droit</div>
-                           <div class="text-base font-normal text-gray-700 service-desc-txt">Vous souhaitez être informé·e sur vos droits pour savoir comment agir ?
-                               Quelle que soit la question que vous vous posez, contactez votre CIDFF !
+                           <div class="text-2xl text-slate-900 font-normal service-head-txt">Sport Society</div>
+                           <div class="text-base font-normal text-gray-700 service-desc-txt">Sport Society is the biggest sports mall in the world . A subsidaey of Viva City LLC which manages Leader Group International Property Investments
                            </div>
                        </div>
                        <svg class="article-line-svg service-card-svg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 93 80">
@@ -369,9 +388,9 @@
             </div>
             <div class="col-span-5 md:col-span-3 flex items-center px-1 md:px-16" data-aos="zoom-in-left" data-aos-duration="800">
                 <div class="pb-6 md:pb-0">
-                    <h1 class="text-5xl text-[#07203d]">Nos plaidoyers </h1><br>
+                    <h1 class="text-5xl text-[#07203d]">Leader Group</h1><br>
                     <h2 class="text-base text-slate-900">
-                        Porter la parole des femmes et les problématiques qu’elles rencontrent, défendre leurs droits au quotidien.
+                        Leader Group of companies is on a fast track in moving forward to manufacture, develop, distribute and retail high quality services and products to its consumers. Leading with Distribution and Retail of Sports and Fitness brands, Manufacturing, Fitness Equipments, Real Estate developments, Trading of Commodities & Chemicals, Manufacturing Smart devices, Hospitality and Investments in the MENA region & abroad.
                     </h2>
                 </div>
             </div>            

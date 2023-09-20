@@ -12,8 +12,28 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
     <title>Leader Group</title>
 </head>
+<style>
+    @media only screen and (min-width: 1024px) {
+        .hr-line:before{
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 2px;
+        width: 100%;
+        background: -webkit-gradient(linear,left top,right top,from(#ffebc7),to(#dcb4e4));
+        background: -webkit-linear-gradient(left,#ffebc7,#dcb4e4);
+        background: -o-linear-gradient(left,#ffebc7 0,#dcb4e4 100%);
+        background: linear-gradient(90deg,#ffebc7,#dcb4e4);
+        }
+    }
+    </style>
+<body>
     <header id="header" class="header">
         <div class="container mx-auto py-7 px-10">
             <div class="grid grid-cols-3 lg:grid-cols-2">
@@ -119,85 +139,81 @@
         </div>
     </div>
     <!-- mobile-header -->
-    <div class="hero relative lg:pt-28 pb-0 md:pt-[15px] md:pb-[175px] min-h-[40vh] lg:min-h-[70vh]" style="overflow:hidden">
-        <div class="container mx-auto px-1 md:px-32 py-20">
-            <div class="flex justify-center">
-                <span class="flex font-light text-base text-gray-400" data-aos="zoom-in">WELCOME <img src="src/img/menu/disk.svg" alt="" class="px-1 w-[18px]"><span class="font-semibold px-1 text-slate-900">OUR PROJECTS AND CAMPAIGNS</span></span>
+    <div class="hero relative pt-5 pb-0 md:pt-[15px] md:pb-[40px]" style="min-height: 80vh;overflow:hidden">
+        <div class="container mx-auto px-4 md:px-16 pb-20 pt-10 lg:py-20">
+            <div class="flex justify-center" data-aos="zoom-in">
+                <span class="flex font-light text-base text-gray-400">WELCOME <img src="src/img/menu/disk.svg" alt="" class="px-1 w-[18px]"><span class="font-semibold px-1 text-slate-900">CONTACT</span></span>
             </div>
-            <div class="flex justify-center pt-10 pb-5 text-4xl lg:text-6xl" data-aos="zoom-in"  data-aos-duration="500">
-                <span class="text-slate-900 text-center font-normal">Our
-                <span class="text-[#ffa100] text-center font-medium">projects and campaigns</span></span>
+            <div class="flex justify-center pt-10 pb-5">
+                <h1 class="text-2xl lg:text-7xl font-semibold text-slate-900" data-aos="zoom-in"  data-aos-duration="500">We Work On <span class="text-[#00cbc7]">Team Work</span></h1>
             </div>
+            <div class="px-2 lg:px-64 flex justify-center flex-col" data-aos="zoom-in"  data-aos-duration="800">
+                <h3 class="pt-4 pb-8 font-medium text-slate-900">
+                   WE ARE PROUD OF OUR PAST AND OUR PRESENT AND WE FACE THE FUTURE WITH UNFLAGGING DETERMINATION
+                </h3>
+            </div>
+            <div id="map" class="map h-[40vh] rounded-lg shadow-md" data-aos="zoom-in" data-aos-duration="900"></div>
         </div>
     </div>
-    <div class="container mx-auto px-3 mt-5 lg:-mt-20">
-        <div class="text-center pt-5 pb-20">
-            <span class="text-4xl lg:text-6xl font-medium lg:font-light text-[#ffa100]" data-aos="zoom-in"  data-aos-duration="800">Our national <br>projects</span>
+    <div class="container mx-auto hr-line relative px-5 pb-2 lg:-mt-11">
+        <div class="py-14">
+            <h1 class="text-3xl lg:text-6xl font-medium lg:font-normal text-[#ffa100] py-3 lg:py-5" data-aos="zoom-in-right" data-aos-duration="500">Closer to you</h1>
+            <h2 class="text-base text-gray-600 py-5" data-aos="zoom-in" data-aos-duration="700">Our helpline is always open to receive any inquiry or feedback. Please feel free to drop us an email from the form below and we will get back to you as soon as we can.
+            </h2>  
+            <div class="grid grid-cols-2 pt-8">
+                <div class="col-span-2 xl:col-span-1 flex items-center w-full" data-aos="zoom-in" data-aos-duration="1000">
+                    <form class="w-full">
+                        <div class="mb-6">
+                            <input type="text" id="name" name="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md focus:ring-blue-500 focus:border-teal-700 block w-full p-2.5" placeholder="Name (Required)" required>
+                        </div>
+                        <div class="mb-6">
+                            <input type="email" id="email" name="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md focus:ring-blue-500 focus:border-teal-700 block w-full p-2.5" placeholder="Email (Required)" required>
+                        </div>
+                        <div class="mb-6">
+                            <input type="tel" id="number" name="number" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md focus:ring-blue-500 focus:border-teal-700 block w-full p-2.5" placeholder="Contact number (Required)" required>
+                        </div>
+                        <div class="mb-6">
+                            <textarea id="message" name="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700" placeholder="Your Message"></textarea>
+                        </div>
+
+                        <button type="submit" class="text-white bg-[#ffa100] hover:bg-[#00cbc7] hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-md text-sm w-full sm:w-auto px-5 py-2.5 text-center transition-all duration-500">Submit</button>
+                    </form>
+                </div>
+                <div class="col-span-2 xl:col-span-1 flex justify-center pt-10 xl:px-40" data-aos="zoom-in" data-aos-duration="1000">
+                    <div class="bg-[#f6c6c6] w-full py-3 px-4 rounded-lg">
+                        <h2 class="text-2xl font-semibold text-slate-950 text-end py-2">LEADER GROUP</h2>
+                        <div>
+                            <div class="flex justify-end py-2">
+                                <span class="text-base font-semibold bg-white rounded-md px-5 py-1 text-end">ADDRESS</span>
+                            </div>
+                            <div class="text-base text-slate-900 font-medium flex justify-end flex-col text-end">
+                                <h3>LEADER SPORT BUILDING</h3>
+                                <h3>P.O Box 2377 - Behind Gargash</h3>
+                                <h3>Service Center,(Mercedes Showroom)</h3>
+                                <h3>AL - Khabeesi Area</h3>
+                                <h3>Deira Dubai</h3>
+                                <h3>United Arab Emirates.</h3>
+                            </div>
+                        </div>
+                        <h2 class="text-2xl font-semibold text-slate-950 text-end pt-6 pb-2">LEADER GROUP</h2>
+                        <div>
+                            <div class="flex justify-end py-2">
+                                <span class="text-base font-semibold bg-white rounded-md px-5 py-1 text-end">CONTACT</span>
+                            </div>
+                            <div class="text-base text-slate-900 font-medium flex justify-end flex-col text-end">
+                                <h3><b>Tel:</b><a href="tel:+97142666668">+971 4 2666668</a></h3>
+                                <h3><b>Fax:</b> +971 4 2666333</h3>
+                                <h3><b>Email 1:</b> <a href="mailto:info@leadergroup.ae">info@leadergroup.ae</a></h3>
+                                <h3><b>Email 2:</b> <a href="mailto:info@leadersports.com">info@leadersports.com</a></h3>
+                                <h3><b>Email 3:</b> <a href="mailto:leader1@leadergroup.ae">leader1@leadergroup.ae</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>         
         </div>
     </div>
-    <div class="container mx-auto px-5 lg:px-72">
-        <div class="py-2" data-aos="zoom-in"  data-aos-duration="800">
-            <h1 class="text-2xl font-semibold text-purple-300 underline cursor-pointer">Project - 1</h1>
-            <p class="text-base text-slate-800 py-4">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores accusantium distinctio illum, fuga aliquam et at odio. Aliquid hic quis quod ab nemo modi dignissimos nulla, doloremque atque sequi. Nihil!
-            </p>
-        </div>
-        <div class="py-2" data-aos="zoom-in"  data-aos-duration="800">
-            <h1 class="text-2xl font-semibold text-purple-300 underline cursor-pointer">Project - 2</h1>
-            <p class="text-base text-slate-800 py-4">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur rem saepe, ullam eveniet reprehenderit eligendi quaerat provident dignissimos autem mollitia, nostrum, explicabo vitae molestiae totam maiores non illum excepturi qui nemo. Impedit dolorem nam qui inventore, totam doloremque. Sed, perferendis.
-            </p>
-        </div>
-        <div class="py-2" data-aos="zoom-in"  data-aos-duration="800">
-            <h1 class="text-2xl font-semibold text-purple-300 underline cursor-pointer">Project - 3</h1>
-            <p class="text-base text-slate-800 py-4">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt delectus pariatur sapiente, est quae consequatur mollitia, voluptas ratione adipisci neque reiciendis in enim. Repellendus tenetur temporibus vitae. Corporis, minima eligendi!
-            </p>
-        </div>
-        <div class="py-2" data-aos="zoom-in"  data-aos-duration="800">
-            <h1 class="text-2xl font-semibold text-purple-300 underline cursor-pointer">Project - 4</h1>
-            <p class="text-base text-slate-800 py-4">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi eveniet tempora voluptate ab doloremque delectus, perspiciatis atque deleniti molestiae ut, dicta commodi quae distinctio soluta temporibus consequuntur, consectetur dolor placeat accusamus laborum officia voluptates maxime pariatur minus. Cumque, explicabo nulla!
-            </p>
-        </div>
-        <div class="py-2" data-aos="zoom-in"  data-aos-duration="800">
-            <h1 class="text-2xl font-semibold text-purple-300 underline cursor-pointer">Project - 5</h1>
-            <p class="text-base text-slate-800 py-4">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quo vel neque quos ipsam velit sequi temporibus molestiae, quisquam, odio sint illum voluptatum reprehenderit ea dicta in qui a blanditiis.
-            </p>
-        </div>
-        <div class="py-2" data-aos="zoom-in"  data-aos-duration="800">
-            <h1 class="text-2xl font-semibold text-purple-300 underline cursor-pointer">Project - 6</h1>
-            <p class="text-base text-slate-800 py-4">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum reprehenderit debitis nulla incidunt eos error! Aliquam possimus molestiae vel repellendus quod porro esse consequuntur excepturi tenetur reiciendis, sapiente, harum cum officiis non a labore.
-            </p>
-        </div>
-    </div>
-    <div class="container mx-auto px-3 pt-4 lg:pt-7">
-        <div class="text-center pt-5 pb-10 lg:pb-20">
-            <span class="text-4xl lg:text-6xl font-medium lg:font-light text-[#ffa100]" data-aos="zoom-in"  data-aos-duration="800">Our campaigns</span>
-        </div>
-    </div>
-    <div class="container mx-auto px-5 lg:px-72">
-        <div class="py-2" data-aos="zoom-in"  data-aos-duration="800">
-            <h1 class="text-2xl font-semibold text-purple-300 underline cursor-pointer">Campaign - 1</h1>
-            <p class="text-base text-slate-800 py-4">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, cum voluptatem animi fugiat unde necessitatibus eos id quasi corporis, aliquid reiciendis dolorum perferendis vitae, amet rem ratione! Porro, placeat ipsam!
-            </p>
-        </div>
-        <div class="py-2" data-aos="zoom-in"  data-aos-duration="800">
-            <h1 class="text-2xl font-semibold text-purple-300 underline cursor-pointer">Campain - 2</h1>
-            <p class="text-base text-slate-800 py-4">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati vero, dignissimos velit nihil ducimus praesentium hic quaerat voluptatibus explicabo, placeat et debitis omnis animi quis odit adipisci aperiam est, nobis nostrum? Ipsa?
-            </p>
-        </div>
-        <div class="py-2" data-aos="zoom-in"  data-aos-duration="800">
-            <h1 class="text-2xl font-semibold text-purple-300 underline cursor-pointer">Campaign - 3</h1>
-            <p class="text-base text-slate-800 py-4">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum deserunt eum nesciunt omnis dicta dignissimos sit cum magni! Libero dolor voluptatibus odio, quos vel perspiciatis voluptate est vitae ducimus totam natus eveniet sed, odit distinctio reiciendis enim eos ea et.</p>
-        </div>
-    </div>
-    <footer class="relative footer mt-28 lg:mt-[170px]">
+    <footer class="relative footer mt-5 lg:mt-[170px]">
         <div class="container mx-auto px-7 md:px-10 pt-5 pb-24 md:pb-40">
             <div class="grid grid-cols-5 gap-4">
                 <div class="col-span-5 md:col-span-1 text-center md:text-start">
@@ -285,8 +301,21 @@
    </footer>
 </body>
 <script src="src/js/main.js"></script>
+<!-- AOS -->
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 <script>
-    AOS.init();
+  AOS.init();
+</script>
+<script>
+    var map = L.map('map').setView([25.2679722, 55.3360829], 14);
+
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    L.marker([25.2679722, 55.3360829]).addTo(map)
+        .bindPopup('Leader Real Estate Salah Al Din St, Al Khabaisi - Dubai, United Arab Emirates')
+        .openPopup();
 </script>
 </html>

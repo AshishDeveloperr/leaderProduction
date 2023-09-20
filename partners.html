@@ -12,7 +12,71 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <title>Leader Group</title>
+    <title>Leader Group - Privacy Policy</title>
+    <style>
+        .mobile-menu{
+        translate: none;
+    rotate: none;
+    scale: none;
+    transform: translate(0px, 0px);
+    opacity: 1;
+    visibility: inherit;
+    background-color: rgba(7, 32, 61, 0.9);
+}
+.right-menu{
+    translate: none;
+    rotate: none;
+    scale: none;
+    transform: translate(0px, 0px);
+    opacity: 1;
+    visibility: inherit;
+}
+.right-menu:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background: -webkit-gradient(linear,left top,right top,from(#ffebc7),to(#dcb4e4));
+    background: -webkit-linear-gradient(left,#ffebc7,#dcb4e4);
+    background: -o-linear-gradient(left,#ffebc7 0,#dcb4e4 100%);
+    background: linear-gradient(90deg,#ffebc7,#dcb4e4);
+    border-top-left-radius: 250px;
+    border-bottom-left-radius: 200px;
+    -webkit-transform: skewY(5deg) translateY(-15%) scale(1);
+    -ms-transform: skewY(5deg) translateY(-15%) scale(1);
+    transform: skewY(5deg) translateY(-15%) scale(1);
+}
+.menu-disk{
+    visibility: hidden;
+    transition:  0.1s ease-in;
+    /* margin-right: 15px */
+}
+.menu-li:hover .menu-disk{
+   visibility: visible;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    transition:  0.6s ease-in-out;
+    color: #ffa100;
+    -webkit-transform: translateX(5px);
+    -ms-transform: translateX(5px);
+    transform: translateX(5px);
+}
+/* menu ends */
+
+
+.who-we-are-desc{
+        -webkit-mask-image: url(src/img/pages/vertical-mask.png);
+    mask-image: url(src/img/pages/vertical-mask.png);
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -o-object-fit: cover;
+    object-fit: cover;
+    }
+
+    </style>
 </head>
     <header id="header" class="header">
         <div class="container mx-auto py-7 px-10">
@@ -119,85 +183,37 @@
         </div>
     </div>
     <!-- mobile-header -->
-    <div class="hero relative lg:pt-28 pb-0 md:pt-[15px] md:pb-[175px] min-h-[40vh] lg:min-h-[70vh]" style="overflow:hidden">
-        <div class="container mx-auto px-1 md:px-32 py-20">
+    <div class="hero relative md:pt-28 pb-0 md:pt-[15px] md:pb-[175px]" style="min-height: 30vh;overflow:hidden">
+        <div class="container mx-auto px-7 md:px-32 py-20">
             <div class="flex justify-center">
-                <span class="flex font-light text-base text-gray-400" data-aos="zoom-in">WELCOME <img src="src/img/menu/disk.svg" alt="" class="px-1 w-[18px]"><span class="font-semibold px-1 text-slate-900">OUR PROJECTS AND CAMPAIGNS</span></span>
+                <span class="flex font-light text-base text-gray-400" data-aos="zoom-in">WELCOME <img src="src/img/menu/disk.svg" alt="" class="px-1 w-[18px]"><span class="font-semibold px-1 text-slate-900">PARTNERS</span></span>
             </div>
-            <div class="flex justify-center pt-10 pb-5 text-4xl lg:text-6xl" data-aos="zoom-in"  data-aos-duration="500">
-                <span class="text-slate-900 text-center font-normal">Our
-                <span class="text-[#ffa100] text-center font-medium">projects and campaigns</span></span>
+            <div class="flex justify-center pt-10 pb-5 text-6xl">
+                <span class="text-[#00cbc7] text-center font-normal" data-aos="zoom-in" data-aos-duration="700">PARTNERS</span>
             </div>
         </div>
     </div>
-    <div class="container mx-auto px-3 mt-5 lg:-mt-20">
-        <div class="text-center pt-5 pb-20">
-            <span class="text-4xl lg:text-6xl font-medium lg:font-light text-[#ffa100]" data-aos="zoom-in"  data-aos-duration="800">Our national <br>projects</span>
+    <div class="container mx-auto pt-20 lg:pt-4 lg:-mt-20 pb-10">
+        <div class="grid grid-cols-5">
+            <div class="col-span-5 lg:col-span-2 flex justify-center" data-aos="zoom-in" data-aos-duration="1000">
+                <div>
+                    <img src="src/img/partner/yahalla.webp" alt="" class="who-we-are-desc h-[60vh]">
+                </div>
+            </div>
+            <div class="col-span-5 lg:col-span-3 px-7 lg:px-10 pt-8 lg:pt-0 flex items-center justify-start" data-aos="zoom-in" data-aos-duration="1000">
+                <div class="py-3">
+                    <span class="text-4xl lg:text-6xl font-semibold text-slate-900">YaHalla</span>
+                    <h2 class="text-base text-slate-900 py-8 lg:pr-10">Leading Mobile manufacturer in UAE partners with Leader Group
+                    </h2>
+                    <a href="http://www.yahalla.com/" target="_blank">
+                        <span class="text-lg text-white font-semibold px-5 py-2 rounded-md shadow-md hover:shadow bg-[#ffa100] hover:bg-[#00cbc7] transition-all duration-500">EXPLORE</span>
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="container mx-auto px-5 lg:px-72">
-        <div class="py-2" data-aos="zoom-in"  data-aos-duration="800">
-            <h1 class="text-2xl font-semibold text-purple-300 underline cursor-pointer">Project - 1</h1>
-            <p class="text-base text-slate-800 py-4">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores accusantium distinctio illum, fuga aliquam et at odio. Aliquid hic quis quod ab nemo modi dignissimos nulla, doloremque atque sequi. Nihil!
-            </p>
-        </div>
-        <div class="py-2" data-aos="zoom-in"  data-aos-duration="800">
-            <h1 class="text-2xl font-semibold text-purple-300 underline cursor-pointer">Project - 2</h1>
-            <p class="text-base text-slate-800 py-4">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur rem saepe, ullam eveniet reprehenderit eligendi quaerat provident dignissimos autem mollitia, nostrum, explicabo vitae molestiae totam maiores non illum excepturi qui nemo. Impedit dolorem nam qui inventore, totam doloremque. Sed, perferendis.
-            </p>
-        </div>
-        <div class="py-2" data-aos="zoom-in"  data-aos-duration="800">
-            <h1 class="text-2xl font-semibold text-purple-300 underline cursor-pointer">Project - 3</h1>
-            <p class="text-base text-slate-800 py-4">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt delectus pariatur sapiente, est quae consequatur mollitia, voluptas ratione adipisci neque reiciendis in enim. Repellendus tenetur temporibus vitae. Corporis, minima eligendi!
-            </p>
-        </div>
-        <div class="py-2" data-aos="zoom-in"  data-aos-duration="800">
-            <h1 class="text-2xl font-semibold text-purple-300 underline cursor-pointer">Project - 4</h1>
-            <p class="text-base text-slate-800 py-4">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi eveniet tempora voluptate ab doloremque delectus, perspiciatis atque deleniti molestiae ut, dicta commodi quae distinctio soluta temporibus consequuntur, consectetur dolor placeat accusamus laborum officia voluptates maxime pariatur minus. Cumque, explicabo nulla!
-            </p>
-        </div>
-        <div class="py-2" data-aos="zoom-in"  data-aos-duration="800">
-            <h1 class="text-2xl font-semibold text-purple-300 underline cursor-pointer">Project - 5</h1>
-            <p class="text-base text-slate-800 py-4">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quo vel neque quos ipsam velit sequi temporibus molestiae, quisquam, odio sint illum voluptatum reprehenderit ea dicta in qui a blanditiis.
-            </p>
-        </div>
-        <div class="py-2" data-aos="zoom-in"  data-aos-duration="800">
-            <h1 class="text-2xl font-semibold text-purple-300 underline cursor-pointer">Project - 6</h1>
-            <p class="text-base text-slate-800 py-4">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum reprehenderit debitis nulla incidunt eos error! Aliquam possimus molestiae vel repellendus quod porro esse consequuntur excepturi tenetur reiciendis, sapiente, harum cum officiis non a labore.
-            </p>
-        </div>
-    </div>
-    <div class="container mx-auto px-3 pt-4 lg:pt-7">
-        <div class="text-center pt-5 pb-10 lg:pb-20">
-            <span class="text-4xl lg:text-6xl font-medium lg:font-light text-[#ffa100]" data-aos="zoom-in"  data-aos-duration="800">Our campaigns</span>
-        </div>
-    </div>
-    <div class="container mx-auto px-5 lg:px-72">
-        <div class="py-2" data-aos="zoom-in"  data-aos-duration="800">
-            <h1 class="text-2xl font-semibold text-purple-300 underline cursor-pointer">Campaign - 1</h1>
-            <p class="text-base text-slate-800 py-4">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, cum voluptatem animi fugiat unde necessitatibus eos id quasi corporis, aliquid reiciendis dolorum perferendis vitae, amet rem ratione! Porro, placeat ipsam!
-            </p>
-        </div>
-        <div class="py-2" data-aos="zoom-in"  data-aos-duration="800">
-            <h1 class="text-2xl font-semibold text-purple-300 underline cursor-pointer">Campain - 2</h1>
-            <p class="text-base text-slate-800 py-4">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati vero, dignissimos velit nihil ducimus praesentium hic quaerat voluptatibus explicabo, placeat et debitis omnis animi quis odit adipisci aperiam est, nobis nostrum? Ipsa?
-            </p>
-        </div>
-        <div class="py-2" data-aos="zoom-in"  data-aos-duration="800">
-            <h1 class="text-2xl font-semibold text-purple-300 underline cursor-pointer">Campaign - 3</h1>
-            <p class="text-base text-slate-800 py-4">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum deserunt eum nesciunt omnis dicta dignissimos sit cum magni! Libero dolor voluptatibus odio, quos vel perspiciatis voluptate est vitae ducimus totam natus eveniet sed, odit distinctio reiciendis enim eos ea et.</p>
-        </div>
-    </div>
-    <footer class="relative footer mt-28 lg:mt-[170px]">
+      
+    <footer class="relative footer mt-[170px]">
         <div class="container mx-auto px-7 md:px-10 pt-5 pb-24 md:pb-40">
             <div class="grid grid-cols-5 gap-4">
                 <div class="col-span-5 md:col-span-1 text-center md:text-start">
@@ -285,8 +301,9 @@
    </footer>
 </body>
 <script src="src/js/main.js"></script>
+<!-- AOS -->
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
-    AOS.init();
+  AOS.init();
 </script>
 </html>
