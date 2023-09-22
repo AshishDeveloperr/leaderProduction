@@ -77,9 +77,9 @@ transform: translateX(5px);
 @media (min-width: 1024px){
 .hero:before{
         inset: 10% 0 0 0;
-        -webkit-transform: rotate(0deg) translateX(4%) translateY(-120px) scale(1.1);
-        -ms-transform: rotate(0deg) translateX(4%) translateY(-120px) scale(1.1);
-        transform: rotate(0deg) translateX(4%) translateY(-120px) scale(1.1);
+        -webkit-transform: rotate(0deg) translateX(0%) translateY(-60px) scale(1.005);
+        -ms-transform: rotate(0deg) translateX(0%) translateY(-60px) scale(1.005);
+        transform: rotate(0deg) translateX(0%) translateY(-60px) scale(1.005);
         /* border-bottom-left-radius: 300px !important; */
     }
  }
@@ -98,8 +98,8 @@ transform: translateX(5px);
     background-size: cover;
 
 
-    -webkit-mask-image: url(img/home-hero.png);
-    mask-image: url(img/home-hero.png);
+    -webkit-mask-image: url(img/img-mask.png);
+    mask-image: url(img/img-mask.png);
     -webkit-mask-size: 100% 100%;
     mask-size: 100% 100%;
     -webkit-mask-repeat: no-repeat;

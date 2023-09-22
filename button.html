@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="src/custom.css">
     <link rel="stylesheet" href="src/output.css">
     <link rel="stylesheet" href="src/input.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Add Owl Carousel CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
@@ -19,41 +20,34 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
     <title>Document</title>
+    <style>
+        .hero-new {
+    background-image: url('src/img/home-hero-2.png');
+    background-repeat: no-repeat;
+    background-size: cover; /* Use background-size for covering the container */
+}
+    </style>
 </head>
 <body>
-    <div class="container mx-auto">
-        <div class="grid grid-cols-3 gap-8 py-10 owl-carousel owl-theme">
-            <div class="col-span-3 lg:col-span-1 item">
-                <div>
-                    <img src="https://fncidff.info/wp-content/uploads/2022/10/1972CIF2.png" alt="" class="w-44">
+    <div class="hero-new">
+        <div class="container mx-auto px-7 md:px-16 lg:pt-20 lg:pb-44">
+            <div class="grid grid-cols-5 gap-3">
+                <div class="col-span-5 md:col-span-2 flex justify-center md:justify-start">
+                    <!-- <img src="src/img/pages/home-hero.webp" alt="" class="w-4/5"> -->
                 </div>
-                <div class="dates-content relative py-10 -mt-3">
-                    <h1 class="text-2xl font-semibold text-[#ffa100]">MR. TAYEB MOHAMMAD IBRAHIM</h1>
-                    <p class="text-xl font-normal text-slate-800 py-2 pr-3">CHAIRMAN, LEADER GROUP</p>
+                <div class="col-span-5 md:col-span-2" style="margin-top:100px">
+                    <div class="text-5xl md:text-8xl font-normal text-center md:text-start py-10">
+                        <h1 class="text-white" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine">Leader</h1>
+                        <h1 class="text-[#ffa100] font-semibold" data-aos="fade-left" data-aos-offset="500">Group</h1>
+                    </div>
+                    <div class="py-6 text-start">
+                        <span class="text-white font-medium text-base leading-6">
+                            WE ARE PROUD OF OUR PAST AND OUR PRESENT AND WE FACE THE FUTURE WITH UNFLAGGING DETERMINATION
+                        </span>
+                    </div>
                 </div>
-                <div class="article-line"></div>
             </div>
-            <div class="col-span-3 lg:col-span-1 item">
-                <div>
-                    <img src="https://fncidff.info/wp-content/uploads/2022/10/1980-1982.png" alt="" class="w-36">
-                </div>
-                <div class="dates-content relative py-10 -mt-3">
-                    <h1 class="text-2xl font-semibold text-[#ffa100]">MR. SAMIR TAYEB MOHAMMAD</h1>
-                    <p class="text-xl font-normal text-slate-800 py-2 pr-3">EXECUTIVE VICE-CHAIRMAN, LEADER GROUP</p>
-                </div>
-                <div class="article-line"></div>
-            </div>
-            <div class="col-span-3 lg:col-span-1 item">
-                <div>
-                    <img src="https://fncidff.info/wp-content/uploads/2022/10/1983-85CIFF.png" alt="" class="w-44">
-                </div>
-                <div class="dates-content relative py-10 -mt-3">
-                    <h1 class="text-2xl font-semibold text-[#ffa100]">MR. ABDUL RAHEEM TAYEB MOHAMMAD</h1>
-                    <p class="text-xl font-normal text-slate-800 py-2 pr-3">HEAD OF LEGAL AFFAIRS, LEADER GROUP</p>
-                </div>
-                <div class="article-line"></div>
-            </div>
-        </div>
+         </div>
     </div>
     
     <script>
