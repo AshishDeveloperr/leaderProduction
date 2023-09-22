@@ -12,6 +12,14 @@
     background-color: rgba(7, 32, 61, 0.9) !important;
 }
 
+/* for changing header logo starts*/
+.header-fixed .fixed-logo{
+    display: block;
+}
+.header-fixed .transparent-logo{
+    display: none;
+}
+/* for changing header logo ends */
 .header-fixed {
     background: white !important;
     position: sticky !important;
@@ -110,6 +118,19 @@ transform: translateX(5px);
     -o-object-fit: cover;
     object-fit: cover;
 }
+
+/* page header */
+/* .header-page:before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background: -webkit-gradient(linear,left top,right top,from(#dcb4e4),to(#ffebc7));
+    background: -webkit-linear-gradient(left,#dcb4e4,#ffebc7);
+    background: -o-linear-gradient(left,#dcb4e4 0,#ffebc7 100%);
+    background: linear-gradient(90deg,#dcb4e4,#ffebc7);
+    border-bottom-left-radius: 100px; 
+} */
 /* hero ends */
 
 .fancy-button:before{

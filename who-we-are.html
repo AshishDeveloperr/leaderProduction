@@ -147,8 +147,9 @@
         <div class="container mx-auto py-7 px-10">
             <div class="grid grid-cols-3 lg:grid-cols-2">
                 <div class="col-span-2 lg:col-span-1 flex justify-start items-center z-10">
-                    <div>
-                        <img src="src/img/LG.webp" alt="" class="w-32 lg:w-44">
+                    <div class="header-logo">
+                        <img src="src/img/LG.webp" alt="" class="w-32 lg:w-44 fixed-logo hidden">
+                        <img src="src/img/logo/Asset 2.webp" alt="" class="w-32 lg:w-44 transparent-logo">
                     </div>
                 </div>
                 <div class="col-span-1 lg:col-span-1 z-10 flex items-center justify-center lg:block">
@@ -248,21 +249,17 @@
         </div>
     </div>
     <!-- mobile-header -->
-    <div class="hero relative pt-5 pb-0 md:pt-[15px] md:pb-[175px] md:min-h-[70vh] xl:min-h-[80vh] 2xl:min-h-[100vh]" style="overflow:hidden">
-        <div class="container mx-auto px-7 md:px-10 py-5 lg:py-20">
+    <div class="hero relative pt-5 pb-0 md:pt-[15px] md:pb-[175px] md:min-h-[70vh] xl:min-h-[80vh] 2xl:min-h-[100vh] -mt-[150px] lg:-mt-[120px]" style="overflow:hidden">
+        <div class="container mx-auto px-7 md:px-10 py-5 lg:py-20 mt-44 mb-44 lg:mb-0 lg:mt-32">
             <div class="flex justify-center">
-                <span class="flex font-light text-base text-gray-400">WELCOME <img src="src/img/menu/disk.svg" alt="" class="px-1 w-[18px]"><span class="font-semibold px-1 text-slate-900">WHO WE ARE</span></span>
+                <span class="flex font-light text-base text-white">WELCOME <img src="src/img/menu/disk.svg" alt="" class="px-1 w-[18px]"><span class="font-semibold px-1 text-[#bbac3d]">WHO WE ARE</span></span>
             </div>
             <div class="flex justify-center flex-col pt-10 pb-5 text-xl lg:text-6xl">
-                <h2 class="text-slate-900 text-center font-normal">The CIDFF:</h2>
-                <h2 class="text-[#ffa100] text-center px-7 lg:px-40 font-medium">First network for access to women's rights in France</h2>
+                <h2 class="text-[#bbac3d] text-center px-7 lg:px-40 font-medium">Who We Are</h2>
             </div>
-            <div class="px-5 lg:px-32 flex justify-center flex-col">
+            <div class="px-5 lg:px-32 flex justify-center flex-col text-white font-medium">
                 <h3 class="pt-4">
                     Established in 1916 by Mohammad Ibrahim, Leader Group of companies is one of the oldest family running business in Dubai. It has gradually diversified from General Trading to Distribution and Retail of Sports and Fitness brands.
-                </h3>
-                <h3 class="py-5">
-                   Find <b>your CIDFF</b> by selecting your department on the map below.
                 </h3>
             </div>
         </div>
@@ -387,7 +384,7 @@
     <div class="container mx-auto pt-20 lg:pt-32 pb-10">
         <div class="grid grid-cols-5">
             <div class="col-span-5 lg:col-span-2 flex  justify-center">
-                <div>
+                <div class="p-3">
                     <img src="src/img/chairman.webp" alt="" class="who-we-are-desc h-[90vh]">
                 </div>
             </div>
@@ -411,7 +408,7 @@
                 </div>
                 <div class="pb-3 pt-6">
                     <span class="text-4xl lg:text-6xl font-semibold text-slate-900">OUR MISSION</span>
-                    <h2 class="text-base text-slate-900 py-8 pr-10">LEADER GROUP OF COMPANIES continuously strives for synergy among technology, fashion and human resources to execute high standard of services and high quality products to meet consumers satisfaction.</h2>
+                    <h2 class="text-base text-slate-900 py-8 lg:pr-10">LEADER GROUP OF COMPANIES continuously strives for synergy among technology, fashion and human resources to execute high standard of services and high quality products to meet consumers satisfaction.</h2>
                 </div>
                 <div class="py-3" id="board-of-directors">
                     <span class="text-4xl lg:text-6xl font-semibold text-slate-900">OUR VISSION</span>
@@ -546,15 +543,12 @@
                         <img src="src/img/LG.webp" alt="" class="w-32 lg:w-44">
                     </div>
                     <ul class="text-xs text-gray-800 py-7 text-center md:text-start">
-                        <li>Mentions légales</li>
-                        <li>Confidentialité</li>
-                        <li>CGU</li>
-                        <li>CGV</li>
+                        <li>LEADER SPORT BUILDING, P.O Box 2377 - Behind Gargash Service Center, (Mercedes Showroom), AL - Khabeesi Area, Deira Dubai, UAE</li>
                     </ul>
-                    <span class="text-xs text-pink-400">© 2022 FNCIDFF Réalisé par <span class="text-gray-800">Adveris</span></span>
+                    <span class="text-xs text-pink-400">© 2023 Leader Group</span>
                 </div>
                 <div class="col-span-5 md:col-span-1 flex flex-col justify-center items-center">
-                    <img src="https://fncidff.info/wp-content/uploads/2022/10/CIDFFclrReseauxsociaux.jpg" alt="" class="rounded-[36px] w-52 mt-2 md:-mt-32 z-10">
+                    <img src="src/img/footer.jpg" alt="" class="rounded-[36px] w-52 mt-2 md:-mt-32 z-10">
                     <div class="grid grid-cols-3 gap-2 -mt-6 z-20">
                     <div class="col-span-1">
                             <div class="social-icon p-3">
@@ -575,35 +569,61 @@
                 </div>
                 <div class="col-span-5 md:col-span-1">
                     <div class="text-center flex justify-center md:justify-start md:text-start md:flex-col mt-7">
-                        <h1 class="text-yellow-500 font-medium text-2xl">Nos</h1>
-                        <h1 class="text-yellow-500 font-medium text-2xl pl-1 md:pl-0 md:-mt-2">services</h1>
+                        <h1 class="text-yellow-500 font-medium text-2xl">Quick</h1>
+                        <h1 class="text-yellow-500 font-medium text-2xl pl-1 md:pl-0 md:-mt-2">Links</h1>
                     </div>
                     <ul class="text-xs text-gray-700 pl-6 pr-3 pt-2 text-center md:text-start">
-                        <li class="hover:text-slate-950 hover:font-bold pb-1">Nous contacter</li>
-                        <li class="hover:text-slate-950 hover:font-bold pb-1">Lutte contre les violences</li>
-                        <li class="hover:text-slate-950 hover:font-bold pb-1">Emploi, Formation et Création d’entreprise</li>
-                        <li class="hover:text-slate-950 hover:font-bold pb-1">Éducation et citoyenneté</li>
-                        <li class="hover:text-slate-950 hover:font-bold pb-1">Vie Familiale et Parentalité</li>
-                        <li class="hover:text-slate-950 hover:font-bold pb-1">Santé et Sexualité</li>
+                        <a href="who-we-are.html">
+                            <li class="hover:text-slate-950 hover:font-bold pb-1">Who We Are</li>
+                        </a>
+                        <a href="our-projects.html">
+                            <li class="hover:text-slate-950 hover:font-bold pb-1">Our Projects</li>
+                        </a>
+                        <a href="partners.html">
+                            <li class="hover:text-slate-950 hover:font-bold pb-1">Partners</li>
+                        </a>
+                        <a href="career.html">
+                            <li class="hover:text-slate-950 hover:font-bold pb-1">Careers</li>
+                        </a>
+                        <a href="news.html">
+                            <li class="hover:text-slate-950 hover:font-bold pb-1">News</li>
+                        </a>
+                        <a href="contact.html">
+                            <li class="hover:text-slate-950 hover:font-bold pb-1">Contact Us</li>
+                        </a>
+                        <a href="privacy-policy.html">
+                            <li class="hover:text-slate-950 hover:font-bold pb-1">Privacy Policy</li>
+                        </a>
                     </ul>
                 </div>
                 <div class="col-span-5 md:col-span-1">
                     <div class="text-center flex justify-center md:justify-start md:text-start md:flex-col mt-7">
-                        <h1 class="text-yellow-500 font-medium text-2xl">Liens </h1>
-                        <h1 class="text-yellow-500 font-medium text-2xl pl-1 md:pl-0 md:-mt-2">utiles</h1>
+                        <h1 class="text-yellow-500 font-medium text-2xl">Find</h1>
+                        <h1 class="text-yellow-500 font-medium text-2xl pl-1 md:pl-0 md:-mt-2">Us</h1>
                     </div>
                     <ul class="text-xs text-gray-700 pl-6 pr-3 pt-2 text-center md:text-start">
-                        <li class="hover:text-slate-950 hover:font-bold pb-1">Nous contacter</li>
-                        <li class="hover:text-slate-950 hover:font-bold pb-1">Faire un don</li>
-                        <li class="text-xs font-medium text-[#00cbc7] hover:font-bold pb-1">Espace CIDFF</li>
-                        <li class="text-xs font-medium text-[#00cbc7] hover:font-bold pb-1">Boutique</li>
+                        <a href="tel:+97142666668">
+                            <li class="hover:text-slate-950 hover:font-bold pb-1">+971 4 2666668</li>
+                        </a>
+                        <a href="tel:+97142666333">
+                            <li class="hover:text-slate-950 hover:font-bold pb-1">+971 4 2666333</li>
+                        </a>
+                        <a href="mailto:info@leadergroup.ae">
+                            <li class="text-xs font-medium text-[#00cbc7] hover:font-bold pb-1">info@leadergroup.ae</li>
+                        </a>
+                        <a href="mailto:info@leadersports.com">
+                            <li class="text-xs font-medium text-[#00cbc7] hover:font-bold pb-1">info@leadersports.com</li>
+                        </a>
+                        <a href="mailto:leader1@leadergroup.ae">
+                            <li class="text-xs font-medium text-[#00cbc7] hover:font-bold pb-1">leader1@leadergroup.ae</li>
+                        </a>
                     </ul>
                 </div>
                 <div class="col-span-5 md:col-span-1 flex justify-center mt-10">
                     <div style="height: 70px;">
                         <a href="" class="transition-all duration-300 ease-in-out fancy-button flex">
                             <div class="link">
-                                <span class="text-white text-[10px] pt-2">Contactez mon CIDFF</span>
+                                <span class="text-white text-base pt-2">CONTACT US</span>
                             </div>
                             <div class="bubble">
                                 <svg class="svg-msg" width="93" height="80" viewBox="0 0 93 80" fill="none" xmlns="http://www.w3.org/2000/svg">
