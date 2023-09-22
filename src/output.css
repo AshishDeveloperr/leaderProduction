@@ -943,10 +943,6 @@ video {
   width: 8rem;
 }
 
-.w-36 {
-  width: 9rem;
-}
-
 .w-4\/5 {
   width: 80%;
 }
@@ -3583,6 +3579,10 @@ video {
     padding-bottom: 5rem;
   }
 
+  .lg\:pb-44 {
+    padding-bottom: 11rem;
+  }
+
   .lg\:pl-44 {
     padding-left: 11rem;
   }
@@ -3601,6 +3601,10 @@ video {
 
   .lg\:pt-1 {
     padding-top: 0.25rem;
+  }
+
+  .lg\:pt-20 {
+    padding-top: 5rem;
   }
 
   .lg\:pt-28 {

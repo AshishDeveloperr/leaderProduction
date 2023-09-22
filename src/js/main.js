@@ -1,4 +1,5 @@
 
+// fixed header
 document.addEventListener("DOMContentLoaded", function() {
     var header = document.getElementById("header");
 

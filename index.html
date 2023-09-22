@@ -30,14 +30,21 @@
     -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.1);
     box-shadow: 0 6px 12px rgba(0,0,0,.1);
 }
+.header-fixed .fixed-logo{
+    display: block;
+}
+.header-fixed .transparent-logo{
+    display: none;
+}
 </style>
 <body>
     <header id="header" class="header">
         <div class="container mx-auto py-7 px-10">
             <div class="grid grid-cols-3 lg:grid-cols-2">
                 <div class="col-span-2 lg:col-span-1 flex justify-start items-center z-10">
-                    <div>
-                        <img src="src/img/LG.webp" alt="" class="w-32 lg:w-44">
+                    <div class="header-logo">
+                        <img src="src/img/LG.webp" alt="" class="w-32 lg:w-44 fixed-logo hidden">
+                        <img src="src/img/logo/Asset 2.webp" alt="" class="w-32 lg:w-44 transparent-logo">
                     </div>
                 </div>
                 <div class="col-span-1 lg:col-span-1 z-10 flex items-center justify-center lg:block">
@@ -137,7 +144,7 @@
         </div>
     </div>
     <!-- mobile-header -->
-   <div class="hero relative py-12 md:pt-[15px] md:pb-[175px]" style="min-height: 100vh;overflow:hidden;margin-top:-115px">
+   <div class="hero relative py-12 md:pt-[15px] md:pb-[175px]" style="min-height: 100vh;overflow:hidden;margin-top:-122px">
        <div class="container mx-auto px-7 md:px-16 lg:py-20">
             <div class="grid grid-cols-5 gap-3">
                 <div class="col-span-5 md:col-span-2 flex justify-center md:justify-start">
