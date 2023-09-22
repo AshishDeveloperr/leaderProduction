@@ -764,10 +764,6 @@ video {
   margin-top: -1.5rem;
 }
 
-.-mt-60 {
-  margin-top: -15rem;
-}
-
 .mb-28 {
   margin-bottom: 7rem;
 }
@@ -941,10 +937,6 @@ video {
 
 .min-h-\[40vh\] {
   min-height: 40vh;
-}
-
-.min-h-\[80vh\] {
-  min-height: 80vh;
 }
 
 .w-32 {
@@ -2969,12 +2961,6 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.shadow-lg {
-  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
 .outline-none {
   outline: 2px solid transparent;
   outline-offset: 2px;
@@ -3340,16 +3326,8 @@ video {
     display: block;
   }
 
-  .md\:min-h-\[\] {
-    min-height: ;
-  }
-
   .md\:min-h-\[70vh\] {
     min-height: 70vh;
-  }
-
-  .md\:min-h-\[80vh\] {
-    min-height: 80vh;
   }
 
   .md\:w-5\/6 {
@@ -3498,20 +3476,12 @@ video {
     margin-top: -8rem;
   }
 
-  .lg\:-mt-\[26rem\] {
-    margin-top: -26rem;
+  .lg\:-mt-\[15rem\] {
+    margin-top: -15rem;
   }
 
   .lg\:mt-\[170px\] {
     margin-top: 170px;
-  }
-
-  .lg\:-mt-\[16rem\] {
-    margin-top: -16rem;
-  }
-
-  .lg\:-mt-\[15rem\] {
-    margin-top: -15rem;
   }
 
   .lg\:block {
@@ -3548,6 +3518,11 @@ video {
   .lg\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+  }
+
+  .lg\:px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 
   .lg\:px-20 {
@@ -3598,16 +3573,6 @@ video {
   .lg\:py-5 {
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
-  }
-
-  .lg\:px-12 {
-    padding-left: 3rem;
-    padding-right: 3rem;
-  }
-
-  .lg\:px-24 {
-    padding-left: 6rem;
-    padding-right: 6rem;
   }
 
   .lg\:pb-0 {
@@ -3695,89 +3660,28 @@ video {
     grid-column: span 1 / span 1;
   }
 
-  .xl\:-mt-\[26rem\] {
-    margin-top: -26rem;
-  }
-
   .xl\:min-h-\[80vh\] {
     min-height: 80vh;
-  }
-
-  .xl\:min-h-\[90vh\] {
-    min-height: 90vh;
-  }
-
-  .xl\:min-h-\[100vh\] {
-    min-height: 100vh;
-  }
-
-  .xl\:px-40 {
-    padding-left: 10rem;
-    padding-right: 10rem;
   }
 
   .xl\:px-32 {
     padding-left: 8rem;
     padding-right: 8rem;
   }
+
+  .xl\:px-40 {
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
 }
 
 @media (min-width: 1536px) {
-  @media (min-width: 768px) {
-    .\32xl\:md\:min-h-\[70vh\] {
-      min-height: 70vh;
-    }
-  }
-
-  .\32xl\:-mt-\[26rem\] {
-    margin-top: -26rem;
-  }
-
-  .\32xl\:-mt-\[28rem\] {
-    margin-top: -28rem;
-  }
-
-  .\32xl\:-mt-\[4rem\] {
-    margin-top: -4rem;
-  }
-
-  .\32xl\:-mt-\[24rem\] {
-    margin-top: -24rem;
-  }
-
-  .\32xl\:-mt-\[25rem\] {
-    margin-top: -25rem;
-  }
-
-  .\32xl\:-mt-\[24\.2rem\] {
-    margin-top: -24.2rem;
-  }
-
   .\32xl\:-mt-\[23rem\] {
     margin-top: -23rem;
   }
 
-  .\32xl\:min-h-\[70vh\] {
-    min-height: 70vh;
-  }
-
   .\32xl\:min-h-\[100vh\] {
     min-height: 100vh;
-  }
-
-  .\32xl\:px-6 {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-
-  .\32xl\:px-60 {
-    padding-left: 15rem;
-    padding-right: 15rem;
-  }
-
-  .\32xl\:px-8 {
-    padding-left: 2rem;
-    padding-right: 2rem;
   }
 
   .\32xl\:px-80 {
