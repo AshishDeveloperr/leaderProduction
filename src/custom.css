@@ -77,10 +77,10 @@ transform: translateX(5px);
 @media (min-width: 1024px){
 .hero:before{
         inset: 10% 0 0 0;
-        -webkit-transform: rotate(1deg) translateX(-3%) translateY(-120px) scale(1.1);
-        -ms-transform: rotate(1deg) translateX(-3%) translateY(-120px) scale(1.1);
-        transform: rotate(1deg) translateX(-3%) translateY(-120px) scale(1.1);
-        border-bottom-left-radius: 300px !important;
+        -webkit-transform: rotate(0deg) translateX(4%) translateY(-120px) scale(1.1);
+        -ms-transform: rotate(0deg) translateX(4%) translateY(-120px) scale(1.1);
+        transform: rotate(0deg) translateX(4%) translateY(-120px) scale(1.1);
+        /* border-bottom-left-radius: 300px !important; */
     }
  }
 .hero:before{
@@ -92,16 +92,20 @@ transform: translateX(5px);
     background: -webkit-linear-gradient(left,#dcb4e4,#ffebc7);
     background: -o-linear-gradient(left,#dcb4e4 0,#ffebc7 100%);
     background: linear-gradient(90deg,#dcb4e4,#ffebc7); */
-    border-bottom-left-radius: 130px;
+    /* border-bottom-left-radius: 30px; */
 
     background-image: url('img/home-hero.png');
     background-size: cover;
-    /* -webkit-mask-image: url(img/home-hero.png);
+
+
+    -webkit-mask-image: url(img/home-hero.png);
     mask-image: url(img/home-hero.png);
     -webkit-mask-size: 100% 100%;
     mask-size: 100% 100%;
     -webkit-mask-repeat: no-repeat;
-    mask-repeat: no-repeat; */
+    mask-repeat: no-repeat;
+    
+    
     background-repeat: no-repeat;
     -o-object-fit: cover;
     object-fit: cover;
