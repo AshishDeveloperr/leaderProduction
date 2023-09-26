@@ -2710,6 +2710,11 @@ video {
   color: rgb(51 102 153 / .35);
 }
 
+.text-\[\#C5B65C\] {
+  --tw-text-opacity: 1;
+  color: rgb(197 182 92 / var(--tw-text-opacity));
+}
+
 .text-\[\#bbac3d\] {
   --tw-text-opacity: 1;
   color: rgb(187 172 61 / var(--tw-text-opacity));
