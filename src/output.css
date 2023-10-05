@@ -975,6 +975,10 @@ video {
   min-height: 80vh;
 }
 
+.w-3\/4 {
+  width: 75%;
+}
+
 .w-32 {
   width: 8rem;
 }
